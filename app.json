@@ -16,7 +16,7 @@
       "inline"
     ],
     "website": "https://github.com/MrMKN/Doctor_Strange-BOT",
-    "repository": "https://github.com/MrMKN/Doctor_Strange-BOT",
+    "repository": "https://github.com/HeyAdithya/Data-Backup-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
