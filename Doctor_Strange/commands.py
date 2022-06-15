@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢', url='https://t.me/VijayAdithyaa')
+                InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿 ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help")
+                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help")
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -44,11 +44,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📢 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
-            InlineKeyboardButton('😇 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
+            InlineKeyboardButton('🏛 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/BharatTorrentPro'),
+            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton('⚡️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
+            InlineKeyboardButton('☄️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -67,7 +67,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "📢 Join Update Channel 📢", url=invite_link.invite_link
+                    "📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂", url=invite_link.invite_link
                 )
             ]
         ]
@@ -85,11 +85,11 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📢 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
-            InlineKeyboardButton('😇 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
+            InlineKeyboardButton('🏛 𝙾𝚆𝙽𝙴𝚁', url='https://t.me/BharatTorrentPro'),
+            InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton('⚡️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
+            InlineKeyboardButton('☄️ 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -411,23 +411,23 @@ async def settings(client, message):
                 [
                     InlineKeyboardButton('𝙿𝚁𝙾𝚃𝙴𝙲𝚃 𝙲𝙾𝙽𝚃𝙴𝙽𝚃',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✔ 𝚈𝙴𝚂' if settings["file_secure"] else '✖ 𝙽𝙾',
+                    InlineKeyboardButton('✔️ 𝚈𝙴𝚂' if settings["file_secure"] else '✖️ 𝙽𝙾',
                                          callback_data=f'setgs#file_secure#{settings["file_secure"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('𝙸𝙼𝙳𝙱', callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✔ 𝚈𝙴𝚂' if settings["imdb"] else '✖ 𝙽𝙾',
+                    InlineKeyboardButton('✔️ 𝚈𝙴𝚂' if settings["imdb"] else '✖️ 𝙽𝙾',
                                          callback_data=f'setgs#imdb#{settings["imdb"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('𝚂𝙿𝙴𝙻𝙻 𝙲𝙷𝙴𝙲𝙺',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✔ 𝚈𝙴𝚂' if settings["spell_check"] else '✖ 𝙽𝙾',
+                    InlineKeyboardButton('✔️ 𝚈𝙴𝚂' if settings["spell_check"] else '✖️ 𝙽𝙾',
                                          callback_data=f'setgs#spell_check#{settings["spell_check"]}#{str(grp_id)}')
                 ],
                 [
                     InlineKeyboardButton('𝚆𝙴𝙻𝙾𝙲𝙾𝙼', callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}'),
-                    InlineKeyboardButton('✔ 𝚈𝙴𝚂' if settings["welcome"] else '✖ 𝙽𝙾',
+                    InlineKeyboardButton('✔️ 𝚈𝙴𝚂' if settings["welcome"] else '✖️ 𝙽𝙾',
                                          callback_data=f'setgs#welcome#{settings["welcome"]}#{str(grp_id)}')
                 ]
             ]
@@ -486,4 +486,3 @@ async def save_template(client, message):
     template = message.text.split(" ", 1)[1]
     await save_group_settings(grp_id, 'template', template)
     await sts.edit(f"Successfully changed template for {title} to\n\n{template}")
-
