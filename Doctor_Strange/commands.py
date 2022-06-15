@@ -43,7 +43,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🏛 𝙶𝚁𝙾𝚄𝙿', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🏛 𝙶𝚁𝙾𝚄𝙿', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂', url='https://t.me/VijayAdithyaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
