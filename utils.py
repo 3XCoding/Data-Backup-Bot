@@ -10,7 +10,7 @@ import os
 from datetime import datetime
 from typing import List
 from pyrogram.types import InlineKeyboardButton
-from Cluster.users_chats_db import db
+from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
 
@@ -38,7 +38,8 @@ class temp(object):
     MELCOW = {}
     U_NAME = None
     B_NAME = None
-    SETTINGS = {}
+    U_MAN = None
+    UF_MAN = None
 
 async def is_subscribed(bot, query):
     try:
@@ -84,7 +85,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
             return movieid
         movieid = movieid[0].movieID
     else:
-        movieid = query
+        movieid = int(query)
     movie = imdb.get_movie(movieid)
     if movie.get("original air date"):
         date = movie["original air date"]
@@ -168,19 +169,8 @@ async def search_gagala(text):
     return [title.getText() for title in titles]
 
 
-async def get_settings(group_id):
-    settings = temp.SETTINGS.get(group_id)
-    if not settings:
-        settings = await db.get_settings(group_id)
-        temp.SETTINGS[group_id] = settings
-    return settings
-    
-async def save_group_settings(group_id, key, value):
-    current = await get_settings(group_id)
-    current[key] = value
-    temp.SETTINGS[group_id] = current
-    await db.update_settings(group_id, current)
-    
+
+
 def get_size(size):
     """Get size in readable format"""
 
@@ -242,6 +232,8 @@ def extract_user(message: Message) -> Union[int, str]:
     else:
         user_id = message.from_user.id
         user_first_name = message.from_user.first_name
+        U_MAN = message.from_user.id
+        UF_MAN = message.from_user.first_name
     return (user_id, user_first_name)
 
 def list_to_str(k):
@@ -370,8 +362,8 @@ def humanbytes(size):
         return ""
     power = 2**10
     n = 0
-    Dic_powerN = {0: ' ', 1: 'KB', 2: 'MB', 3: 'GB', 4: 'TB'}
+    Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
         n += 1
-    return str(round(size, 2)) + " " + Dic_powerN[n] + ''
+    return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
