@@ -1,4 +1,3 @@
-
 </p>
 <h1 align="center">
   <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝙲𝙺𝚄𝙿 𝙱𝙾𝚃</b>
@@ -33,13 +32,11 @@
 
 ## Spacial Thanks To
 
-* [⚡️Mhdrzn⚡️](https://github.com/arjun-sangu)
 
-* [💥𝙂𝙄𝙏𝙃𝙐𝘽 𝙉𝙊𝙊𝘽💥](https://t.me/GitHub_noob)
 
 ## TELAGRAM SUPPORT 
 
-* [![MKN BOTZ](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/mkn_bots_updates)
+* [![123](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/VijayAdithyaa)
 
 
 ## Disclaimer
