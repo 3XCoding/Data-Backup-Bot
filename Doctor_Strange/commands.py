@@ -6,8 +6,8 @@ from Script import script
 from pyrogram import Client, filters
 from pyrogram.errors import ChatAdminRequired, FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from database.ia_filterdb import Media, get_file_details, unpack_new_file_id
-from database.users_chats_db import db
+from Cluster.ia_filterdb import Media, get_file_details, unpack_new_file_id
+from Cluster.users_chats_db import db
 from info import CHANNELS, ADMINS, AUTH_CHANNEL, LOG_CHANNEL, PICS, BATCH_FILE_CAPTION, CUSTOM_FILE_CAPTION
 from utils import get_size, is_subscribed, temp
 import re
