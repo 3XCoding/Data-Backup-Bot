@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 import datetime
 import time
-from Cluster.users_chats_db import db
+from database.users_chats_db import db
 from info import ADMINS
 from utils import broadcast_messages
 import asyncio
@@ -27,7 +27,7 @@ async def verupikkals(bot, message):
         if pti:
             success += 1
         elif pti == False:
-            if sh == "Bocked":
+            if sh == "Blocked":
                 blocked+=1
             elif sh == "Deleted":
                 deleted += 1
