@@ -32,6 +32,11 @@ SPELL_CHECK = {}
 async def give_filter(client, message):    
     await auto_filter(client, message)
 
+@Client.on_message(filters.group & filters.text & filters.incoming)
+async def give_filter(client,message):
+    group_id = message.chat.id
+    name = message.text
+
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
