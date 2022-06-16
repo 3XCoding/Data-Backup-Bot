@@ -32,7 +32,7 @@
 
 ## Spacial Thanks To
 
-* [![MKN Bots](https://t.me/mkn_bots_updates)
+* [![MKN Bots](https://img.shields.io/static/v1?label=Evaa&message=Maria&color=geen)](https://t.me/mkn_bots_updates)
 
 ## TELAGRAM SUPPORT 
 
