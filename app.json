@@ -62,7 +62,7 @@
         },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "{file_name}\n\n🔘 size - {file_size}\n\n╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗\n💥 𝙅𝙊𝙄𝙉 :- @Mr_Movies_Main\n💥 𝙅𝙊𝙄𝙉 :- @mknmovies\n╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ ",
+            "value": "🗂<b>File Name :</b> {file_name}\n\n 💽<b>Size :</b> {file_size}\n\n🧑🏻‍💻<b>Powered By:</b> @HeyNatashaBot <b>×</b> @BharatTorrentPro ",
             "required": false
         },
         "DATABASE_URI": {
@@ -91,7 +91,7 @@
         },
         "IMDB_TEMPLATE": {
             "description": "Custom IMDB Template",
-            "value": "<b>🗂 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>⭐️ Rating</b>: <a href={url}/ratings>{rating}</a>\n<b>🗣 Languages</b> : <code>{languages}</code>\n<b>👨‍💼 Dɪʀᴇᴄᴛᴏʀ</b>: {director}\n<b>👨🏻‍🦱 Pʀᴏᴅᴜᴄᴇʀ</b>: {producer}\n<b>📑 wʀɪᴛᴇʀ</b>: {writer}\n<b>📀 RunTime</b>: {runtime} Minutes\n<b>📆 Release Info</b> : {release_date}\n<b>🎛 Countries</b> : <code>{countries}</code>\n<b>📓 Sᴛᴏʀy</b> : <code>{plot}</code>\n\n\n<b>🙋🏻 Requested by</b> : {message.from_user.mention}",        
+            "value": "<b>🗂 𝚃𝚒𝚝𝚕𝚎:</b> <a href={url}>{title}</a> \n<b>🎭 𝙶𝚎𝚗𝚛𝚎𝚜:</b> {genres}\n <b>📆 𝚈𝚎𝚊𝚛:</b> <a href={url}/releaseinfo>{year}</a>\n<b>⭐️ 𝚁𝚊𝚝𝚒𝚗𝚐:</b> <a href={url}/ratings>{rating}/10</a>\n<b>🗣 𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜:</b> <code>{languages}</code>\n<b>📀 𝚁𝚞𝚗 𝚃𝚒𝚖𝚎:</b> {runtime} Minutes\n<b>🎛 𝙲𝚘𝚞𝚗𝚝𝚛𝚒𝚎𝚜:</b> <code>{countries}</code>\n\n<b>📖 𝚂𝚝𝚘𝚛𝚢:</b> <code>{plot}</code>\n\n<b>🙋🏻 𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝙱𝚢:</b> {message.from_user.mention}",        
             "required": false
         }, 
         "IMDB_DELET_TIME": {
@@ -106,12 +106,12 @@
         },
         "START_TXT": {
             "description": "bot start message text [ {mention} = bot startd user name {bot_name} = your bot name",
-            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...",
+            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽... \n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa",
             "required": false
         },
         "BTN_LOCK_TEXT": {
             "description": "Button Lock text use one person search risult dont use other person 😁 alert text",
-            "value": "𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣. ഇത് നിങ്ങൾ search ചെയ്തതല്ല നിങ്ങൾക് വേണ്ടത് നിങ്ങൾ search ചെയ്യൂ 🙏.",
+            "value": "",
             "required": false
         },
         "FORCE_TEXT": {
@@ -121,7 +121,7 @@
         },
         "WELCOME": {
             "description": "custom group welcome messege (new user neme use this code= {user} / your group name use this code= {chat})",
-            "value": "👋 Hello Mr {user} ❣️\n\nwelcome to {chat} 🤩",
+            "value": "",
             "required": false        
         },
         "P_TTI_SHOW_OFF": {
