@@ -27,6 +27,7 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
+
 @Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):    
     await auto_filter(client, message)
