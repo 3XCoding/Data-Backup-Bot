@@ -28,15 +28,15 @@ SPELL_CHECK = {}
 
 
 
-@Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
-async def give_filter(client, message):    
-    await auto_filter(client, message)
-
+@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
+async def give_filter(client, message):
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
 
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
-
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
         return await query.answer("oKda", show_alert=True)
@@ -46,7 +46,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.",show_alert=True)
+        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
