@@ -28,10 +28,11 @@ SPELL_CHECK = {}
 
 
 
-@Client.on_message(filters.group & filters.text & filters.incoming)
+@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client,message):
-    group_id = message.chat.id
-    name = message.text
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
