@@ -81,12 +81,12 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🎟 𝚃𝙸𝚃𝙻𝙴: {search}', 'dupe')
+            InlineKeyboardButton(f'🎟𝚂𝙴𝙰𝚁𝙲𝙷 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴 : {search}', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'🗂️ 𝙵𝙸𝙻𝙴𝚂: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'🗂️𝙵𝙸𝙻𝙴𝚂 : {len(files)}', 'dupe'),
             InlineKeyboardButton(f'💫 𝚃𝙸𝙿𝚂', 'tips')
         ]
     )
@@ -414,7 +414,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
-            InlineKeyboardButton('🎖 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
+            InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
