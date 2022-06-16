@@ -6,7 +6,7 @@
 
 ### Features
 - » 𝙰𝚞𝚝𝚘 𝙵𝚒𝚕𝚝𝚎𝚛
-- » Manual Filter
+- » 𝙼𝚊𝚗𝚞𝚊𝚕 𝙵𝚒𝚕𝚝𝚎𝚛
 - » 𝙸𝙼𝙳𝚋
 - » 𝙰𝚍𝚖𝚒𝚗 𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜
 - » 𝙱𝚛𝚘𝚊𝚍𝚌𝚊𝚜𝚝
@@ -32,7 +32,7 @@
 
 ## Spacial Thanks To
 
-
+* [![MKN Bots](https://t.me/mkn_bots_updates)
 
 ## TELAGRAM SUPPORT 
 
