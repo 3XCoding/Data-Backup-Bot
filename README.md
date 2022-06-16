@@ -34,7 +34,7 @@
 
 * [![MKN Bots](https://img.shields.io/static/v1?label=MKN&message=Bots)](https://t.me/mkn_bots_updates)
 * [![Mhdrzn](https://img.shields.io/static/v1?label=Arjun&message=Sangu)](https://github.com/arjun-sangu)
-* [![GitHub Noob](https://img.shields.io/static/v1?label=GitHub_Noob&message)](https://t.me/GitHub_noob)
+* [![GitHub Noob](https://img.shields.io/static/v1?label=GitHub&message=Noob)](https://t.me/GitHub_noob)
 
 ## TELAGRAM SUPPORT 
 
