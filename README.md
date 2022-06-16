@@ -36,7 +36,7 @@
 
 ## TELAGRAM SUPPORT 
 
-* [![123](https://img.shields.io/static/v1?label=MKN&message=BOTZ&color=critical)](https://t.me/VijayAdithyaa)
+* [![Channel](https://img.shields.io/static/v1?labelᴀᴅɪᴛʏᴀ&message= ᴀʀ)](https://t.me/VijayAdithyaa)
 
 
 ## Disclaimer
