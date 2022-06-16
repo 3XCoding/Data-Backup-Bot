@@ -36,7 +36,7 @@
 
 ## TELAGRAM SUPPORT 
 
-* [![Channel](https://img.shields.io/static/v1?labelᴀᴅɪᴛʏᴀ&message= ᴀʀ)](https://t.me/VijayAdithyaa)
+* [![Channel](https://img.shields.io/static/v1?label=ᴀᴅɪᴛʏᴀ&message= ᴀʀ)](https://t.me/VijayAdithyaa)
 
 
 ## Disclaimer
