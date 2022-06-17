@@ -28,9 +28,11 @@ SPELL_CHECK = {}
 
 
 
-@Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
-async def give_filter(client, message):    
-    await auto_filter(client, message)
+@Client.on_message(filters.group & filters.text & ~filters.edited & filters.incoming)
+async def give_filter(client,message):
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
@@ -76,17 +78,7 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    btn.insert(0, 
-        [
-            InlineKeyboardButton(f'🗂 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: {search}', 'dupe')
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton(f'📁 𝙵𝙸𝙻𝙴𝚂: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'💫 𝚃𝙸𝙿𝚂', 'tips')
-        ]
-    )
+    
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
