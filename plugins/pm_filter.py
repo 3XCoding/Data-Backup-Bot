@@ -399,6 +399,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
+            InlineKeyboardButton('🔎 𝚂𝙴𝙰𝚁𝙲𝙷', switch_inline_query_current_chat=''),
+            ],[
             InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa')
             ],[
@@ -413,6 +415,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽', url='https://t.me/VijayAdithyaa/325'),
+            ],[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
             InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter')
             ],[
@@ -430,7 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
+            InlineKeyboardButton('🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽', url='https://t.me/VijayAdithyaa/325'),
             InlineKeyboardButton('🔆 𝚂𝙾𝚄𝚁𝙲𝙴', callback_data='source')
             ],[
             InlineKeyboardButton('🏯 𝙷𝙾𝙼𝙴', callback_data='start'),
@@ -517,7 +521,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻', callback_data='rfrsh')
+            InlineKeyboardButton('↻', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -536,7 +540,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻', callback_data='rfrsh')
+            InlineKeyboardButton('↻', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
