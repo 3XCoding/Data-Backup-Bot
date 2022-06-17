@@ -143,7 +143,7 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files        
         ]
-if offset != "":
+    if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
