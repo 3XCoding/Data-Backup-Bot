@@ -11,7 +11,7 @@ from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GRO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
-from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp
 from Cluster.users_chats_db import db
 from Cluster.ia_filterdb import Media, get_file_details, get_search_results
 from Cluster.filters_mdb import(
@@ -27,29 +27,24 @@ BUTTONS = {}
 SPELL_CHECK = {}
 
 
-# # ---------- 🔘 [ | 𝗕𝗢𝗧 𝗣𝗠 𝗙𝗜𝗟𝗧𝗘𝗥𝗦 | ] 🔘 ---------- # #
 
 @Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
 async def give_filter(client, message):    
     await auto_filter(client, message)
 
-
-
-# # ---------- 🔘 [ | CALLBACKQUERY NEXT | ] 🔘 ---------- # #
-  
-@Client.on_callback_query(filters.regex(r"^pnext"))
+@Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
 
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("mm okda 😁🙏", show_alert=True)
+        return await query.answer("oKda", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.",show_alert=True)
+        await query.answer("Next Pages Group Not Support. You Try The Bot!",show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -82,7 +77,17 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-
+    btn.insert(0, 
+        [
+            InlineKeyboardButton(f'🗂 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: {search}', 'dupe')
+        ]
+    )
+    btn.insert(1,
+        [
+            InlineKeyboardButton(f'📁 𝙵𝙸𝙻𝙴𝚂: {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'💫 𝚃𝙸𝙿𝚂', 'tips')
+        ]
+    )
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -91,16 +96,16 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🔙 𝙱𝙰𝙲𝙺 ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 Pages {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
+            [InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"📃 Pages {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages")]
         )
     elif off_set is None:
-        btn.append([InlineKeyboardButton(f"📄 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{req}_{key}_{n_offset}")])
+        btn.append([InlineKeyboardButton(f"📑 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"), InlineKeyboardButton("𝙽𝙴𝚇𝚃 ❯", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
-                InlineKeyboardButton("🔙 𝙱𝙰𝙲𝙺", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f"📄 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
-                InlineKeyboardButton("𝙽𝙴𝚇𝚃 ➡️", callback_data=f"next_{req}_{key}_{n_offset}")
+                InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton(f"📑 {round(int(offset)/10)+1} / {round(total/10)}", callback_data="pages"),
+                InlineKeyboardButton("𝙽𝙴𝚇𝚃 ❯", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
     try:
@@ -110,8 +115,6 @@ async def next_page(bot, query):
     except MessageNotModified:
         pass
     await query.answer()
-  
-# # ---------- 🔘 [ | MAIN FUNCTION | ] 🔘 ---------- #
 
 @Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)       
 async def auto_filter(client, msg, spoll=False):
@@ -141,17 +144,16 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files        
         ]
-
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"📄 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝙽𝙴𝚇𝚃 ➡️",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"📑 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝙽𝙴𝚇𝚃 ❯",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="📄 1/1",callback_data="pages")]
+            [InlineKeyboardButton(text="📑 1/1",callback_data="pages")]
         )
     imdb = await get_poster(search, file=(files[0]).file_name) if IMDB else None
     if imdb:
@@ -202,10 +204,7 @@ async def auto_filter(client, msg, spoll=False):
         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
     if spoll:
         await msg.message.delete()
-
-
-# # ---------- 🔘 [ | SPELL CHECK | ] 🔘 ---------- # #
-       
+        
 
 async def advantage_spell_chok(msg):
     query = re.sub(r"\b(pl(i|e)*?(s|z+|ease|se|ese|(e+)s(e)?)|((send|snd|giv(e)?|gib)(\sme)?)|movie(s)?|new|latest|br((o|u)h?)*|^h(e|a)?(l)*(o)*|mal(ayalam)?|t(h)?amil|file|that|find|und(o)*|kit(t(i|y)?)?o(w)?|thar(u)?(o)*w?|kittum(o)*|aya(k)*(um(o)*)?|full\smovie|any(one)|with\ssubtitle(s)?)", "", msg.text, flags=re.IGNORECASE) # plis contribute some common words 
