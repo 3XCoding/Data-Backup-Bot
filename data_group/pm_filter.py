@@ -1,4 +1,4 @@
-#Kanged From @TroJanZheX
+# Kanged From @TroJanZheX
 import asyncio
 import re
 import ast
@@ -6,15 +6,17 @@ import ast
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
-from databasevs.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
-from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
+from databasevs.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, \
+    make_inactive
+from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, \
+    SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
-from utils import get_size, is_subscribed, get_poster, search_gagala, temp
+from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from databasevs.users_chats_db import db
 from databasevs.ia_filterdb import Media, get_file_details, get_search_results
-from databasevs.filters_mdb import(
+from databasevs.filters_mdb import (
    del_all,
    find_filter,
    get_filters,
@@ -28,9 +30,11 @@ SPELL_CHECK = {}
 
 
 
-@Client.on_message(filters.private & filters.text & ~filters.edited & filters.incoming)
-async def give_filter(client, message):    
-    await auto_filter(client, message)
+@Client.on_message((filters.private | filters.group) & filters.text & ~filters.edited & filters.incoming)
+async def give_filter(client,message):
+    k = await manual_filters(client, message)
+    if k == False:
+        await auto_filter(client, message)
 
 @Client.on_callback_query(filters.regex(r"^next"))
 async def next_page(bot, query):
@@ -76,17 +80,7 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
-    btn.insert(0, 
-        [
-            InlineKeyboardButton(f'🗂 𝚈𝙾𝚄𝚁 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: {search}', 'dupe')
-        ]
-    )
-    btn.insert(1,
-        [
-            InlineKeyboardButton(f'📁 𝙵𝙸𝙻𝙴𝚂: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'💫 𝚃𝙸𝙿𝚂', 'tips')
-        ]
-    )
+    
     if 0 < offset <= 10:
         off_set = 0
     elif offset == 0:
@@ -407,6 +401,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
+            InlineKeyboardButton('🔎 𝚂𝙴𝙰𝚁𝙲𝙷', switch_inline_query_current_chat=''),
+            ],[
             InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa')
             ],[
@@ -421,6 +417,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
+            InlineKeyboardButton('𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽', url='https://t.me/VijayAdithyaa/325'),
+            ],[
             InlineKeyboardButton('𝙼𝙰𝙽𝚄𝙰𝙻 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='manuelfilter'),
             InlineKeyboardButton('𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁', callback_data='autofilter')
             ],[
@@ -438,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
+            InlineKeyboardButton('𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽', url='https://t.me/VijayAdithyaa/325'),
             InlineKeyboardButton('🔆 𝚂𝙾𝚄𝚁𝙲𝙴', callback_data='source')
             ],[
             InlineKeyboardButton('🏯 𝙷𝙾𝙼𝙴', callback_data='start'),
@@ -525,7 +523,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻', callback_data='rfrsh')
+            InlineKeyboardButton('↻', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -544,7 +542,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
-            InlineKeyboardButton('♻', callback_data='rfrsh')
+            InlineKeyboardButton('↻', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
