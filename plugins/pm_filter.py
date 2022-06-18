@@ -633,6 +633,7 @@ async def auto_filter(client, msg, spoll=False):
             query = search,
             title = imdb['title'],
             votes = imdb['votes'],
+            reviews = imdb['reviews'],
             aka = imdb["aka"],
             seasons = imdb["seasons"],
             box_office = imdb['box_office'],
