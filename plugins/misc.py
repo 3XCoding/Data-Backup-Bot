@@ -166,6 +166,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             query = imdb['title'],
             title = imdb['title'],
             votes = imdb['votes'],
+            reviews = imdb['reviews'],
             aka = imdb["aka"],
             seasons = imdb["seasons"],
             box_office = imdb['box_office'],
