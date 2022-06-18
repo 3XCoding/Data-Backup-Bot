@@ -6,15 +6,15 @@ import ast
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
-from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
+from databasevs.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp
-from database.users_chats_db import db
-from database.ia_filterdb import Media, get_file_details, get_search_results
-from database.filters_mdb import(
+from databasevs.users_chats_db import db
+from databasevs.ia_filterdb import Media, get_file_details, get_search_results
+from databasevs.filters_mdb import(
    del_all,
    find_filter,
    get_filters,
@@ -392,6 +392,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+            
+                buttons = [[
+                  InlineKeyboardButton('🏛 𝙶𝚁𝙾𝚄𝙿 🏛', url='https://t.me/BharatTorrentPro')
+                  ]]
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
@@ -402,8 +406,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption
-            )
-
+            protect_content=True if ident == 'checksubp' else False,
+            reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
+        )
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
