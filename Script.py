@@ -12,10 +12,11 @@ class script(object):
 ✯ 𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂: v1.0.2"""
     SOURCE_TXT = """<b>NOTE:</b>
 ➜ Data Backup Bot is a open source project. 
-➜ Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>Hey Adithya</a>
+➜ Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>GitHub+Adithya</a>
 
-<b>DEVS:</b>
-➜ <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>"""
+<b>ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ:</b>
+➜ <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
+➜ <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
