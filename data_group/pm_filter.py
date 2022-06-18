@@ -392,6 +392,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
+            
+                buttons = [[
+                  InlineKeyboardButton('🏛 𝙶𝚁𝙾𝚄𝙿 🏛', url='https://t.me/BharatTorrentPro')
+                  ]]
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
@@ -402,8 +406,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption
-            )
-
+            protect_content=True if ident == 'checksubp' else False,
+            reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
+        )
     elif query.data == "pages":
         await query.answer()
     elif query.data == "start":
