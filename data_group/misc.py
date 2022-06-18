@@ -89,7 +89,7 @@ async def who_is(client, message):
                 chat_member_p.joined_date or time.time()
             ).strftime("%Y.%m.%d %H:%M:%S")
             message_out_str += (
-                "<b>➲Joined this Chat on:</b> <code>"
+                "<b>❯ 𝙶𝚁𝙾𝚄𝙿 𝙹𝙾𝙸𝙽 𝙾𝙽:</b> <code>"
                 f"{joined_date}"
                 "</code>\n"
             )
