@@ -1,7 +1,7 @@
 {
-    "name": "Doctor_Strange-BOT",
+    "name": "Data-Backup-Bot",
     "description": "This is a simple & powerfull autofilter bot",
-    "logo": "https://telegra.ph/file/2d15ee681fcbfd71895e7.jpg",
+    "logo": "https://telegra.ph/file/0ea44ca49c698e8f56a8a.jpg",
     "keywords": [
       "telegram",
       "auto-filter",
@@ -81,7 +81,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "MKN_BOTZ_DISCUSSION_GROUP",
+            "value": "BharatTorrentPro",
             "required": false
         },
         "IMDB": {
@@ -111,12 +111,10 @@
         },
         "BTN_LOCK_TEXT": {
             "description": "Button Lock text use one person search risult dont use other person 😁 alert text",
-            "value": "",
             "required": false
         },
         "FORCE_TEXT": {
             "description": "custom force sub text (use ** = bold / use ``=  mono)",
-            "value": "**𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!**",
             "required": false
         },
         "WELCOME": {
