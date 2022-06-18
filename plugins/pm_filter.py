@@ -6,15 +6,15 @@ import ast
 from pyrogram.errors.exceptions.bad_request_400 import MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
 from Script import script
 import pyrogram
-from databasevs.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
+from database.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive
 from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GROUPS, P_TTI_SHOW_OFF, IMDB, SINGLE_BUTTON, SPELL_CHECK_REPLY, IMDB_TEMPLATE
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp
-from databasevs.users_chats_db import db
-from databasevs.ia_filterdb import Media, get_file_details, get_search_results
-from databasevs.filters_mdb import(
+from database.users_chats_db import db
+from database.ia_filterdb import Media, get_file_details, get_search_results
+from database.filters_mdb import(
    del_all,
    find_filter,
    get_filters,
@@ -388,7 +388,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size=get_size(files.file_size)
-        f_caption=files.caption
+        f_caption=files.caption,
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
