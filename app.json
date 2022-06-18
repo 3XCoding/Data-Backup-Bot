@@ -91,7 +91,7 @@
         },
         "IMDB_TEMPLATE": {
             "description": "Custom IMDB Template",
-            "value": "<b>🗂 𝚃𝚒𝚝𝚕𝚎:</b> <a href={url}>{title}</a> \n<b>🎭 𝙶𝚎𝚗𝚛𝚎𝚜:</b> {genres}\n <b>📆 𝚈𝚎𝚊𝚛:</b> <a href={url}/releaseinfo>{year}</a>\n<b>⭐️ 𝚁𝚊𝚝𝚒𝚗𝚐:</b> <a href={url}/ratings>{rating}/10</a>\n<b>🗣 𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜:</b> <code>{languages}</code>\n<b>📀 𝚁𝚞𝚗 𝚃𝚒𝚖𝚎:</b> {runtime} Minutes\n<b>🎛 𝙲𝚘𝚞𝚗𝚝𝚛𝚒𝚎𝚜:</b> <code>{countries}</code>\n\n<b>📖 𝚂𝚝𝚘𝚛𝚢:</b> <code>{plot}</code>\n\n<b>🙋🏻 𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝙱𝚢:</b> {message.from_user.mention}",        
+            "value": "<b>🗂 𝚃𝚒𝚝𝚕𝚎:</b> <a href={url}>{title}</a> \n<b>🎭 𝙶𝚎𝚗𝚛𝚎𝚜:</b> {genres}\n <b>📆 𝚈𝚎𝚊𝚛:</b> <a href={url}/releaseinfo>{year}</a>\n<b>⭐️ 𝚁𝚊𝚝𝚒𝚗𝚐:</b> <a href={url}/ratings>{rating}/10</a> ● {votes}\n<b>🗣 𝙻𝚊𝚗𝚐𝚞𝚊𝚐𝚎𝚜:</b> <code>{languages}</code>\n<b>📀 𝚁𝚞𝚗 𝚃𝚒𝚖𝚎:</b> {runtime} Minutes\n<b>🎛 𝙲𝚘𝚞𝚗𝚝𝚛𝚒𝚎𝚜:</b> <code>{countries}</code>\n\n<b>📖 𝚂𝚝𝚘𝚛𝚢:</b> <code>{plot}</code>\n\n<b>🙋🏻 𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝙱𝚢:</b> {message.from_user.mention}",        
             "required": false
         }, 
         "IMDB_DELET_TIME": {
