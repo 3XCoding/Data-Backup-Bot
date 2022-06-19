@@ -38,7 +38,7 @@ async def give_filter(client,message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝚄𝚜𝚎𝚜 𝚘𝚗𝚕𝚢 𝙰𝚕𝚕𝚘𝚠𝚎𝚍", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -60,7 +60,8 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"[{get_size(file.file_size)}] 
+                    {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -122,7 +123,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝚄𝚜𝚎𝚜 𝚘𝚗𝚕𝚢 𝙰𝚕𝚕𝚘𝚠𝚎𝚍", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -368,8 +369,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption
+                    protect_content=True if ident == 'checksubp' else False,
+                    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro) ]])
                     )
-                await query.answer('Check PM, I have sent files in pm',show_alert = True)
+                await query.answer('𝙸 𝙿𝚎𝚛𝚜𝚘𝚗𝚊𝚕𝚕𝚢 𝚂𝚎𝚗𝚍 𝚃𝚑𝚎 𝙵𝚒𝚕𝚎𝚜 𝚃𝚘 𝚈𝚘𝚞...',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
         except PeerIdInvalid:
@@ -389,6 +392,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = files.file_name
         size=get_size(files.file_size)
         f_caption = files.caption
+        protect_content=True if ident == 'checksubp' else False,
+        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro) ]])
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
