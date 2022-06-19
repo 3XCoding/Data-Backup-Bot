@@ -349,7 +349,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         f_caption=files.caption
         protect_content=True if ident == 'checksubp' else False,
         reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
-         )
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
@@ -375,7 +374,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == 'checksubp' else False,
                     reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro') ]])
-                    )
                 await query.answer('𝙸 𝙿𝚎𝚛𝚜𝚘𝚗𝚊𝚕𝚕𝚢 𝚂𝚎𝚗𝚍 𝚃𝚑𝚎 𝙵𝚒𝚕𝚎𝚜 𝚃𝚘 𝚈𝚘𝚞...',show_alert = True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !',show_alert = True)
@@ -398,7 +396,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         f_caption = files.caption
         protect_content=True if ident == 'checksubp' else False,
         reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
-         )
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
