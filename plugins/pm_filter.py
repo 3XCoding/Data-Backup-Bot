@@ -370,6 +370,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
+                    protect_content=True if ident == 'checksubp' else False,
+                    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro') ]])      
                     )
                 await query.answer('𝙸 𝙿𝚎𝚛𝚜𝚘𝚗𝚊𝚕𝚕𝚢 𝚂𝚎𝚗𝚍 𝚃𝚑𝚎 𝙵𝚒𝚕𝚎𝚜 𝚃𝚘 𝚈𝚘𝚞...',show_alert = True)
         except UserIsBlocked:
