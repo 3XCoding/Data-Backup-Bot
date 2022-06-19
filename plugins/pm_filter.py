@@ -348,7 +348,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         size=get_size(files.file_size)
         f_caption=files.caption
         protect_content=True if ident == 'checksubp' else False,
-        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
+        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿 ⭐️', url='https://t.me/BharatTorrentPro') ]])
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
@@ -393,6 +393,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = files.file_name
         size=get_size(files.file_size)
         f_caption = files.caption
+        protect_content=True if ident == 'checksubp' else False,
+        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿 ⭐️', url='https://t.me/BharatTorrentPro') ]])
         if CUSTOM_FILE_CAPTION:
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
