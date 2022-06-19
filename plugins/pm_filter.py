@@ -366,7 +366,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
                     file_id=file_id,
-                    caption=f_caption
+                    caption=f_caption,
                     protect_content=True if ident == 'checksubp' else False,
                     reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro) ]])
                     )
