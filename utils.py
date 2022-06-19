@@ -127,7 +127,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
         "music_team": list_to_str(movie.get("music department")),
         "distributors": list_to_str(movie.get("distributors")),
         'release_date': date,
-        'calendar': calendar,
+        'calendar': movie.get('calendar'),
         'year': movie.get('year'),
         'genres': list_to_str(movie.get("genres")),
         'poster': movie.get('full-size cover url'),
