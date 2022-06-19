@@ -72,7 +72,8 @@ async def next_page(bot, query):
                     text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}", callback_data=f'files_#{file.file_id}',
+                    text=f"{get_size(file.file_size)}", 
+                    callback_data=f'files_#{file.file_id}',
                 ),
             ]
             for file in files
@@ -351,6 +352,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
+                  buttons = [[
+                  InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/VijayAdithyaa') ]])
+                  ]]
             except Exception as e:
                 logger.exception(e)
             f_caption=f_caption
@@ -393,12 +397,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         size=get_size(files.file_size)
         f_caption = files.caption
         protect_content=True if ident == 'checksubp' else False,
-        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro') ]])
-        if CUSTOM_FILE_CAPTION:
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
                                                        file_caption='' if f_caption is None else f_caption)
+                buttons = [[
+                  InlineKeyboardButton('⭐️ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ⭐️', url='https://t.me/BharatTorrentPro')
+                  ]]
             except Exception as e:
                 logger.exception(e)
                 f_caption=f_caption
@@ -410,6 +415,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False,
+            reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa') ]])
         )
     elif query.data == "pages":
         await query.answer()
