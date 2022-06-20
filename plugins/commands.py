@@ -25,7 +25,7 @@ async def start(client, message):
                 InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa')
             ],
             [
-                InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', url=f"https://t.me/{temp.U_NAME}?start=help"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,7 +91,7 @@ async def start(client, message):
             InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/filmboxcommunity')
             ],[
-            InlineKeyboardButton('ℹ️ 𝙷𝙴𝙻𝙿', callback_data='help'),
+            InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', callback_data='help'),
             InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
