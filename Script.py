@@ -6,20 +6,20 @@ class script(object):
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
 
-<>×</> <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
+<b>‹› 𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-<b>×</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-<b>×</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:</b> 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-<b>×</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:</b> 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-<b>×</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> 𝙷𝙴𝚁𝙾𝙺𝚄
-<b>×</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
+<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
+<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:</b> 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
+<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:</b> 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
+<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> 𝙷𝙴𝚁𝙾𝙺𝚄
+<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
     SOURCE_TXT = """🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
 
 𝑵𝒐𝒕𝒆:
 <b>×</b> Data Backup Bot is a open source project. 
 <b>×</b> Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>GitHub+Adithya</a>
 
-<b>𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔:</b>
+𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔:
 <b>×</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
 <b>×</b> <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
     MANUELFILTER_TXT = """𝑭𝒊𝒍𝒕𝒆𝒓𝒔:
@@ -30,7 +30,7 @@ class script(object):
 <b>×</b> only admins can add filters in a chat.
 <b>×</b> alert buttons have a limit of 64 characters.
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
@@ -63,7 +63,7 @@ class script(object):
 <b>×</b> Only admins can add a connection.
 <b>×</b> Send <code>/connect</code> for connecting me to ur PM
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
@@ -72,7 +72,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> These are the extra features of Data Backup Bot
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
@@ -82,7 +82,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> This module only works for my admins
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /delete - <code>to delete a specific file from db.</code>
