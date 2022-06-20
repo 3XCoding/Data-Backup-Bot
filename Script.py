@@ -78,7 +78,7 @@ class script(object):
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    ADMIN_TXT = """𝑨𝒅𝒎𝒊𝒏 𝑴𝒐𝒅𝒔
+    ADMIN_TXT = """𝑨𝒅𝒎𝒊𝒏 𝑴𝒐𝒅𝒔:
 
 𝑵𝒐𝒕𝒆:
 <b>×</b> This module only works for my admins
