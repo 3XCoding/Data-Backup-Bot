@@ -27,7 +27,7 @@ class script(object):
 <b>×</b> only admins can add filters in a chat.
 <b>×</b> alert buttons have a limit of 64 characters.
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
@@ -55,14 +55,14 @@ class script(object):
    I'll add all the files in that channel to my db."""
     CONNECTION_TXT = """𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔:
 
-× Used to connect bot to PM for managing filters 
-× it helps to avoid spamming in groups.
+<b>×</b> Used to connect bot to PM for managing filters 
+<b>×</b> it helps to avoid spamming in groups.
 
 𝑵𝒐𝒕𝒆:
 <b>×</b> Only admins can add a connection.
 <b>×</b> Send <code>/connect</code> for connecting me to ur PM
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
 
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
@@ -72,7 +72,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> These are the extra features of Data Backup Bot
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
 
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
@@ -83,7 +83,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> This module only works for my admins
 
-<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
+<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
 
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
