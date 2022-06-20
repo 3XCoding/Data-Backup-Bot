@@ -6,13 +6,13 @@ class script(object):
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
 
-<b>‹›</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b></b> {}
-<b>‹›</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁:</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> Pyrogram
-<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:</b> Python 3
-<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:</b> Mongo DB
-<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> Heroku
-<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
+<b>‹›</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴 :</b></b> {}
+<b>‹›</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁 :</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
+<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 :</b> Pyrogram
+<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> Python 3
+<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b> Mongo DB
+<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b> Heroku
+<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.0.2"""
     SOURCE_TXT = """🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
 
 𝑵𝒐𝒕𝒆:
@@ -96,11 +96,11 @@ class script(object):
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """🖱 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
 
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂:</b> <code>{}</code>
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂:</b> <code>{}</code>
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂:</b> <code>{}</code>
-<b>‹› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴:</b> <code>{}</code>
-<b>‹› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴:</b> <code>{}</code>"""
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 :</b> {}
+<b>‹› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
+<b>‹› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}"""
     LOG_TEXT_G = """New Group
 
 Group = {}(<code>{}</code>)
