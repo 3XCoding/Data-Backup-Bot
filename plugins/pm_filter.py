@@ -664,30 +664,24 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>🗂 Title:</b> {search}\n\n<b>🙋🏻 Requested by: {message.from_user.mention}</b>\n<b>©️ Powered by: <a href='https://t.me/BharatTorrentPro>{message.chat.title}</a></b>\n\n<b>✍️ Note:</b> <s>This message will be Auto-deleted after 5 minutes to avoid copyright issues.</s>"
+        cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await hehe.delete()
-            await message.reply_text(text=f"", disable_notification = True)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.edit_text(text=f"", disable_notification = True)
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await fek.edit_text(text=f" ")
     else:
-         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
          await asyncio.sleep(IMDB_DELET_TIME)
+     if spoll:
          await fuk.delete()
-         await message.reply_text(text=f" ")
-       
         
 
 async def advantage_spell_chok(msg):
