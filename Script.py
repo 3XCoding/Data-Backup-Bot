@@ -4,7 +4,8 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}
 
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    ABOUT_TXT = """⤷ 𝑨𝒃𝒐𝒖𝒕:
+    ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
+
 ✯ <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
 ✯ <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
@@ -13,12 +14,12 @@ class script(object):
 ✯ <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> 𝙷𝙴𝚁𝙾𝙺𝚄
 ✯ <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
     SOURCE_TXT = """𝑵𝒐𝒕𝒆:
-➜ Data Backup Bot is a open source project. 
-➜ Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>GitHub+Adithya</a>
+<b>×</b> Data Backup Bot is a open source project. 
+<b>×</b> Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>GitHub+Adithya</a>
 
-<b>ᴅᴇᴠᴇʟᴏᴘᴇʀꜱ:</b>
-➜ <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-➜ <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
+<b>𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔:</b>
+<b>×</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
+<b>×</b> <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
     MANUELFILTER_TXT = """𝑭𝒊𝒍𝒕𝒆𝒓𝒔:
 <b>×</b> Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
 
