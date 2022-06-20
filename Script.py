@@ -6,14 +6,16 @@ class script(object):
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
 
-✯ <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
+<>×</> <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-✯ <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
-✯ <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:</b> 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
-✯ <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:</b> 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
-✯ <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> 𝙷𝙴𝚁𝙾𝙺𝚄
-✯ <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
-    SOURCE_TXT = """𝑵𝒐𝒕𝒆:
+<b>×</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
+<b>×</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴:</b> 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
+<b>×</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴:</b> 𝙼𝙾𝙽𝙶𝙾 𝙳𝙱
+<b>×</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁:</b> 𝙷𝙴𝚁𝙾𝙺𝚄
+<b>×</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂:</b> v1.0.2"""
+    SOURCE_TXT = """🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
+
+𝑵𝒐𝒕𝒆:
 <b>×</b> Data Backup Bot is a open source project. 
 <b>×</b> Source : <a href=https://github.com/HeyAdithya/Data-Backup-Bot>GitHub+Adithya</a>
 
