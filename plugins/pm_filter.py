@@ -678,10 +678,9 @@ async def auto_filter(client, msg, spoll=False):
             await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
     else:
-         await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-         await asyncio.sleep(IMDB_DELET_TIME)
-     if spoll:
-         await fuk.delete()
+        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await msg.message.delete()
         
 
 async def advantage_spell_chok(msg):
