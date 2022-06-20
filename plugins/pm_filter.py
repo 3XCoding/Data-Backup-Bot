@@ -679,14 +679,14 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.edit_text(text=f"", disable_notification = True)
         except Exception as e:
             logger.exception(e)
-            await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+            fek = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await fek.edit_text(text=f" ")
     else:
-        await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
-            await asyncio.sleep(IMDB_DELET_TIME)
-            await fuk.delete()
-            await message.reply_text(text=f" ")
+         fuk = await message.reply_text(cap, reply_markup=InlineKeyboardMarkup(btn))
+         await asyncio.sleep(IMDB_DELET_TIME)
+         await fuk.delete()
+         await message.reply_text(text=f" ")
        
         
 
