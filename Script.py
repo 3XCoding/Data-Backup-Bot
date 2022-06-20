@@ -2,8 +2,9 @@ class script(object):
     START_TXT = """<b>𝙷𝙸 {},</b>
 \n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 <a href=https://t.me/{}>{}</a>, 𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈 😍\n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa"""
     HELP_TXT = """𝙷𝙴𝚈 {}
+
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    ABOUT_TXT = """𝑨𝒃𝒐𝒖𝒕:
+    ABOUT_TXT = """⤷ 𝑨𝒃𝒐𝒖𝒕:
 ✯ <b>𝙼𝚈 𝙽𝙰𝙼𝙴:</b> {}
 ✯ 𝙲𝚁𝙴𝙰𝚃𝙾𝚁: <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
 ✯ <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈:</b> 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
@@ -19,7 +20,6 @@ class script(object):
 ➜ <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
 ➜ <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
     MANUELFILTER_TXT = """𝑭𝒊𝒍𝒕𝒆𝒓𝒔:
-
 <b>×</b> Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
 
 𝑵𝒐𝒕𝒆:
@@ -27,13 +27,12 @@ class script(object):
 <b>×</b> only admins can add filters in a chat.
 <b>×</b> alert buttons have a limit of 64 characters.
 
-<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
+<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
 • /filter - <code>add a filter in chat</code>
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """𝑩𝒖𝒕𝒕𝒐𝒏𝒔:
-
 <b>×</b> Data Backup Bot Supports both url and alert inline buttons.
 
 𝑵𝒐𝒕𝒆:
@@ -42,19 +41,18 @@ class script(object):
 <b>×</b> Buttons should be properly parsed as markdown format
 
 𝑼𝑹𝑳 𝑩𝒖𝒕𝒕𝒐𝒏𝒔:
-<code>[Button Text](buttonurl:https://t.me/VijayAdithyaa)</code>
+<b>×</b> <code>[Button Text](buttonurl:https://t.me/VijayAdithyaa)</code>
 
 𝑨𝒍𝒆𝒓𝒕 𝑩𝒖𝒕𝒕𝒐𝒏𝒔:
-<code>[Button Text](buttonalert:This is an alert message)</code>"""
+<b>×</b> <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """𝑨𝒖𝒕𝒐 𝑭𝒊𝒍𝒕𝒆𝒓:
 
 𝑵𝒐𝒕𝒆:
-<>×</b> Make me the admin of your channel if it's private.
-<>×</b> make sure that your channel does not contains camrips, porn and fake files.
-<>×</b> Forward the last message to me with quotes.
+<b>×</b> Make me the admin of your channel if it's private.
+<b>×</b> make sure that your channel does not contains camrips, porn and fake files.
+<b>×</b> Forward the last message to me with quotes.
    I'll add all the files in that channel to my db."""
     CONNECTION_TXT = """𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔:
-
 <b>×</b> Used to connect bot to PM for managing filters 
 <b>×</b> it helps to avoid spamming in groups.
 
@@ -62,8 +60,7 @@ class script(object):
 <b>×</b> Only admins can add a connection.
 <b>×</b> Send <code>/connect</code> for connecting me to ur PM
 
-<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
-
+<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
 • /connect  - <code>connect a particular chat to your PM</code>
 • /disconnect  - <code>disconnect from a chat</code>
 • /connections - <code>list all your connections</code>"""
@@ -72,8 +69,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> These are the extra features of Data Backup Bot
 
-<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
-
+<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
@@ -83,8 +79,7 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> This module only works for my admins
 
-<b>𝘊𝘰𝘮𝘮𝘢𝘯𝘥𝘴 𝘈𝘯𝘥 𝘜𝘴𝘢𝘨𝘦:</b>
-
+<b>𝙲𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝙰𝚗𝚍 𝚄𝚜𝚊𝚐𝚎:</b>
 • /logs - <code>to get the rescent errors</code>
 • /stats - <code>to get status of files in db.</code>
 • /delete - <code>to delete a specific file from db.</code>
@@ -96,7 +91,7 @@ class script(object):
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
+    STATUS_TXT = """🖱 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
 
 <b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂:</b> <code>{}</code>
 <b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂:</b> <code>{}</code>
