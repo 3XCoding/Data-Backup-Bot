@@ -15,9 +15,9 @@ async def style_buttons(c, m, cb=False):
 
         ],[
         
-        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewriter_capital'),
-        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+serief_capital'),
-        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+c_small_cap'),
+        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewritercapital'),
+        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+seriefcapital'),
+        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+csmall_cap'),
     
         ],[
 
@@ -107,24 +107,22 @@ async def style(c, m):
         cls = Fonts.typewriter
     if style == 'outline':
         cls = Fonts.outline
-    if style == 'typewriter_capital':
-        cls = Fonts.typewriter_capital
-    if style == 'serief_capital':
-        cls = Fonts.serief_capital
-    if style == 'bold_cool_capital':
-        cls = Fonts.bold_cool_capital
-    if style == 'c_small_cap':
-        cls = Fonts.c_small_cap
     if style == 'serif':
-        cls = Fonts.serief
+        cls = Fonts.serif
+    if style == 'typewritercapital':
+        cls = Fonts.typewritercapital
+    if style == 'seriefcapital':
+        cls = Fonts.seriefcapital
+    if style == 'csmall_cap':
+        cls = Fonts.csmall_cap
     if style == 'bold_cool':
         cls = Fonts.bold_cool
     if style == 'cool':
         cls = Fonts.cool
     if style == 'small_cap':
-        cls = Fonts.smallcap
-    if style == 'script':
-        cls = Fonts.script
+        cls = Fonts.small_cap
+    if style == 'script_bolt':
+        cls = Fonts.script_bolt
     if style == 'script_bolt':
         cls = Fonts.bold_script
     if style == 'tiny':
@@ -132,9 +130,9 @@ async def style(c, m):
     if style == 'comic':
         cls = Fonts.comic
     if style == 'sans':
-        cls = Fonts.san
+        cls = Fonts.sans
     if style == 'slant_sans':
-        cls = Fonts.slant_san
+        cls = Fonts.slant_sans
     if style == 'slant':
         cls = Fonts.slant
     if style == 'sim':
@@ -142,13 +140,15 @@ async def style(c, m):
     if style == 'circles':
         cls = Fonts.circles
     if style == 'circle_dark':
-        cls = Fonts.dark_circle
+        cls = Fonts.circle_dark
     if style == 'gothic':
         cls = Fonts.gothic
     if style == 'gothic_bolt':
         cls = Fonts.bold_gothic
     if style == 'cloud':
         cls = Fonts.cloud
+    if style == 'happy':
+        cls = Fonts.happy
     if style == 'happy':
         cls = Fonts.happy
     if style == 'sad':
