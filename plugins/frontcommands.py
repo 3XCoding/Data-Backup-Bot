@@ -15,9 +15,9 @@ async def style_buttons(c, m, cb=False):
 
         ],[
         
-        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁 𝙲𝙰𝙿𝙸𝙰𝙿𝙸𝚃𝙰𝙻', callback_data='style+typewriter_capital'),
-        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅 𝐂𝐀𝐏𝐈𝐓𝐀𝐋', callback_data='style+serief_capital'),
-        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ ᴄᴀᴘɪᴛᴀʟ', callback_data='style+c_small_cap'),
+        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewriter_capital'),
+        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+serief_capital'),
+        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+c_small_cap'),
     
         ],[
 
@@ -107,6 +107,12 @@ async def style(c, m):
         cls = Fonts.typewriter
     if style == 'outline':
         cls = Fonts.outline
+    if style == 'typewriter_capital':
+        cls = Fonts.typewriter_capital
+    if style == 'serief_capital':
+        cls = Fonts.serief_capital
+    if style == 'bold_cool_capital':
+        cls = Fonts.bold_cool_capital
     if style == 'serif':
         cls = Fonts.serief
     if style == 'bold_cool':
