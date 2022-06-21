@@ -69,7 +69,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-    def typewritercapital(text):
+    def ctypewriter(text):
         style = {
             'A': '𝙰',
             'B': '𝙱',
@@ -112,7 +112,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-    def seriefcapital(text):
+    def cserief(text):
         style = {
             'A': '𝐀',
             'B': '𝐁',
@@ -2497,11 +2497,11 @@ class Fonts:
             'c': 'ᴄ',
             'd': 'ᴅ',
             'e': 'ᴇ',
-            'f': 'ғ',
+            'f': 'ꜰ',
             'g': 'ɢ',
             'h': 'ʜ',
             'i': 'ɪ',
-            'j': 'ɪ',
+            'j': 'ᴊ',
             'k': 'ᴋ',
             'l': 'ʟ',
             'm': 'ᴍ',
@@ -2510,7 +2510,7 @@ class Fonts:
             'p': 'ᴘ',
             'q': 'ǫ',
             'r': 'ʀ',
-            's': 's',
+            's': 'ꜱ',
             't': 'ᴛ',
             'u': 'ᴜ',
             'v': 'ᴠ',
