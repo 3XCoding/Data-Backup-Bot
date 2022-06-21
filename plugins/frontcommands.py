@@ -15,9 +15,9 @@ async def style_buttons(c, m, cb=False):
 
         ],[
         
-        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewritercapital'),
-        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+seriefcapital'),
-        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+csmall_cap'),
+        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewriter_capital'),
+        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+serief_capital'),
+        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+c_small_cap'),
     
         ],[
 
@@ -108,21 +108,21 @@ async def style(c, m):
     if style == 'outline':
         cls = Fonts.outline
     if style == 'serif':
-        cls = Fonts.serif
-    if style == 'typewritercapital':
+        cls = Fonts.serief
+    if style == 'typewriter_capital':
         cls = Fonts.typewritercapital
-    if style == 'seriefcapital':
+    if style == 'serief_capital':
         cls = Fonts.seriefcapital
-    if style == 'csmall_cap':
-        cls = Fonts.csmall_cap
+    if style == 'c_small_cap':
+        cls = Fonts.csmallcap
     if style == 'bold_cool':
         cls = Fonts.bold_cool
     if style == 'cool':
         cls = Fonts.cool
     if style == 'small_cap':
-        cls = Fonts.small_cap
-    if style == 'script_bolt':
-        cls = Fonts.script_bolt
+        cls = Fonts.smallcap
+    if style == 'script':
+        cls = Fonts.script
     if style == 'script_bolt':
         cls = Fonts.bold_script
     if style == 'tiny':
@@ -130,9 +130,9 @@ async def style(c, m):
     if style == 'comic':
         cls = Fonts.comic
     if style == 'sans':
-        cls = Fonts.sans
+        cls = Fonts.san
     if style == 'slant_sans':
-        cls = Fonts.slant_sans
+        cls = Fonts.slant_san
     if style == 'slant':
         cls = Fonts.slant
     if style == 'sim':
@@ -140,15 +140,13 @@ async def style(c, m):
     if style == 'circles':
         cls = Fonts.circles
     if style == 'circle_dark':
-        cls = Fonts.circle_dark
+        cls = Fonts.dark_circle
     if style == 'gothic':
         cls = Fonts.gothic
     if style == 'gothic_bolt':
         cls = Fonts.bold_gothic
     if style == 'cloud':
         cls = Fonts.cloud
-    if style == 'happy':
-        cls = Fonts.happy
     if style == 'happy':
         cls = Fonts.happy
     if style == 'sad':
