@@ -14,6 +14,12 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('𝐒𝐞𝐫𝐢𝐟', callback_data='style+serif'),
 
         ],[
+        
+        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁 𝙲𝙰𝙿𝙸𝙰𝙿𝙸𝚃𝙰𝙻', callback_data='style+typewriter_capital'),
+        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅 𝐂𝐀𝐏𝐈𝐓𝐀𝐋', callback_data='style+serief_capital'),
+        InlineKeyboardButton('ꜱᴍᴀʟʟᴄᴀᴘ', callback_data='style+c_small_cap'),
+    
+        ],[
 
         InlineKeyboardButton('𝑺𝒆𝒓𝒊𝒇', callback_data='style+bold_cool'),
         InlineKeyboardButton('𝑆𝑒𝑟𝑖𝑓', callback_data='style+cool'),
@@ -42,15 +48,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('🅒︎🅘︎🅡︎🅒︎🅛︎🅔︎🅢︎', callback_data='style+circle_dark'),
         InlineKeyboardButton('𝔊𝔬𝔱𝔥𝔦𝔠', callback_data='style+gothic'),
         InlineKeyboardButton('𝕲𝖔𝖙𝖍𝖎𝖈', callback_data='style+gothic_bolt'),
-
         ],[
-
-        InlineKeyboardButton('C͜͡l͜͡o͜͡u͜͡d͜͡s͜͡', callback_data='style+cloud'),
-        InlineKeyboardButton('H̆̈ă̈p̆̈p̆̈y̆̈', callback_data='style+happy'),
-        InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
-
-        ],[
-
         InlineKeyboardButton('𝙽𝙴𝚇𝚃 ❯', callback_data="nxt")
     ]]
     if not cb:
@@ -87,6 +85,10 @@ async def nxt(c, m):
             InlineKeyboardButton('ዪሀክቿነ', callback_data='style+qvnes'),
             InlineKeyboardButton('S̶t̶r̶i̶k̶e̶', callback_data='style+strike'),
             InlineKeyboardButton('F༙r༙o༙z༙e༙n༙', callback_data='style+frozen')
+            ],[
+            InlineKeyboardButton('C͜͡l͜͡o͜͡u͜͡d͜͡s͜͡', callback_data='style+cloud'),
+            InlineKeyboardButton('H̆̈ă̈p̆̈p̆̈y̆̈', callback_data='style+happy'),
+            InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
             ],[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='nxt+0')
         ]]
