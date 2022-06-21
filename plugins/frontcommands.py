@@ -113,6 +113,8 @@ async def style(c, m):
         cls = Fonts.serief_capital
     if style == 'bold_cool_capital':
         cls = Fonts.bold_cool_capital
+    if style == 'c_small_cap':
+        cls = Fonts.c_small_cap
     if style == 'serif':
         cls = Fonts.serief
     if style == 'bold_cool':
