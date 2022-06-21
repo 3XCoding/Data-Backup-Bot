@@ -427,6 +427,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+        )
+        await query.message.edit_text(
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
+        )
+        await query.message.edit_text(
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
+        )
+        await query.message.edit_text(
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
@@ -446,16 +459,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="⏱𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
         )
         await query.message.edit_text(
-            text="."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
         )
         await query.message.edit_text(
-            text=". ."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
         )
         await query.message.edit_text(
-            text=". . ."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -473,16 +486,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="⏱𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
         )
         await query.message.edit_text(
-            text="."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
         )
         await query.message.edit_text(
-            text=". ."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
         )
         await query.message.edit_text(
-            text=". . ."
+            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
