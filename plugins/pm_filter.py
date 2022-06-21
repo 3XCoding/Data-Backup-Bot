@@ -667,16 +667,17 @@ async def auto_filter(client, msg, spoll=False):
         cap = f"Here is what i found for your query {search}"
     if imdb and imdb.get('poster'):
         try:
-            await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.edit_text(text=f"{search} Cʟᴏꜱᴇᴅ", disable_notification = True)
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await hehe.delete()
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await fek.edit_text(text=f"{search} Cʟᴏꜱᴇᴅ")
+            await fek.delete()
     else:
         fuk = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()
         await message.reply_text(text=f"{search} Cʟᴏꜱᴇᴅ")
          
