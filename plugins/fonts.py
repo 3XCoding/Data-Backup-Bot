@@ -69,7 +69,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-    def typewriter_capital(text):
+    def typewritercapital(text):
         style = {
             'A': '𝙰',
             'B': '𝙱',
@@ -112,7 +112,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-    def serief_capital(text):
+    def seriefcapital(text):
         style = {
             'A': '𝐀',
             'B': '𝐁',
@@ -411,7 +411,7 @@ class Fonts:
             text = text.replace(i, j)
         return text
 
-    def c_smallcap(text):
+    def csmallcap(text):
         style = {
             'a': 'ᴀ',
             'b': 'ʙ',
