@@ -15,8 +15,8 @@ async def style_buttons(c, m, cb=False):
 
         ],[
         
-        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+typewriter_capital'),
-        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+serief_capital'),
+        InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+c_typewriter'),
+        InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+c_serief'),
         InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+c_small_cap'),
     
         ],[
