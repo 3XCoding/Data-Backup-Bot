@@ -109,10 +109,10 @@ async def style(c, m):
         cls = Fonts.outline
     if style == 'serif':
         cls = Fonts.serief
-    if style == 'typewriter_capital':
-        cls = Fonts.typewritercapital
-    if style == 'serief_capital':
-        cls = Fonts.seriefcapital
+    if style == 'c_typewriter':
+        cls = Fonts.ctypewriter
+    if style == 'c_serief':
+        cls = Fonts.cserief
     if style == 'c_small_cap':
         cls = Fonts.csmallcap
     if style == 'bold_cool':
