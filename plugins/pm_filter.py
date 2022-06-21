@@ -677,7 +677,6 @@ async def auto_filter(client, msg, spoll=False):
             await fek.edit_text(text=f"{search} Cʟᴏꜱᴇᴅ")
     else:
         fuk = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-        await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()
         await message.reply_text(text=f"{search} Cʟᴏꜱᴇᴅ")
          
