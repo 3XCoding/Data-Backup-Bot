@@ -17,13 +17,13 @@ async def style_buttons(c, m, cb=False):
         
         InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+c_typewriter'),
         InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+c_serief'),
-        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘ', callback_data='style+c_small_cap'),
+        InlineKeyboardButton('𝑆𝐸𝑅𝐼𝐹', callback_data='style+c_small_cap'),
     
         ],[
 
         InlineKeyboardButton('𝑺𝒆𝒓𝒊𝒇', callback_data='style+bold_cool'),
         InlineKeyboardButton('𝑆𝑒𝑟𝑖𝑓', callback_data='style+cool'),
-        InlineKeyboardButton('Sᴍᴀʟʟ Cᴀᴘs', callback_data='style+small_cap'),
+        InlineKeyboardButton('ꜱᴍᴀʟʟ ᴄᴀᴘꜱ', callback_data='style+small_cap'),
 
         ],[
 
