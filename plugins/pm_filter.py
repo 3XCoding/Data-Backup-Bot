@@ -671,9 +671,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif update.data.startswith("settings"):
-         mrk, set_type, status, grp_id = update.data.split("#")
-         grpid = await active_connection(str(update.from_user.id))
+    elif query.data.startswith("setgs"):
+         ident, set_type, status, grp_id = query.data.split("#")
+         grpid = await active_connection(str(query.from_user.id))
+         
          if str(grp_id) != str(grpid):
             await update.message.edit("𝙸𝙰𝙼 𝙽𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝙰𝙽𝚈 𝙶𝚁𝙾𝚄𝙿..!\n   𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 /connect 𝙰𝙽𝙳 𝙲𝙾𝙽𝙽𝙴𝙲𝚃 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃")
          if status == "True":
