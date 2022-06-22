@@ -17,7 +17,7 @@ async def style_buttons(c, m, cb=False):
         
         InlineKeyboardButton('𝚃𝚈𝙿𝙴𝚂𝚆𝚁𝙸𝚃𝙴𝚁', callback_data='style+c_typewriter'),
         InlineKeyboardButton('𝐒𝐄𝐑𝐈𝐄𝐅', callback_data='style+c_serief'),
-        InlineKeyboardButton('𝑆𝐸𝑅𝐼𝐹', callback_data='style+c_small_cap'),
+        InlineKeyboardButton('𝑺𝑬𝑹𝑰𝑭', callback_data='style+c_small_cap'),
     
         ],[
 
@@ -50,7 +50,7 @@ async def style_buttons(c, m, cb=False):
         InlineKeyboardButton('𝕲𝖔𝖙𝖍𝖎𝖈', callback_data='style+gothic_bolt'),
         ],[
         InlineKeyboardButton('𝙽𝙴𝚇𝚃 ❯', callback_data="nxt"),
-        InlineKeyboardButton('𝙷𝙾𝙼𝙴', callback_data='start')
+        InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
     ]]
     if not cb:
         await m.reply_text(m.text, reply_markup=InlineKeyboardMarkup(buttons), quote=True)
@@ -92,7 +92,7 @@ async def nxt(c, m):
             InlineKeyboardButton('S̑̈ȃ̈d̑̈', callback_data='style+sad'),
             ],[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='nxt+0'),
-            InlineKeyboardButton( '𝙷𝙾𝙼𝙴', callback_data='start')
+            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
         ]]
         await m.answer()
         await m.message.edit_reply_markup(InlineKeyboardMarkup(buttons))
