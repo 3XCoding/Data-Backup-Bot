@@ -1,11 +1,11 @@
 """Telegram Ping / Pong Speed
-Syntax: .ping"""
+Syntax: plugins.helper_functions.ping"""
 
 import time
 import random
 from pyrogram import Client, filters
 from info import COMMAND_HAND_LER
-from plugins.bharat.cust_p_filters import f_onw_fliter
+from .cust_p_filters import f_onw_fliter
 
 # -- Constants -- #
 ALIVE = "🙂" 
