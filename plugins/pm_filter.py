@@ -684,9 +684,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         else:
              await save_group_settings(grpid, set_type, True)
                
-         settings = await get_settings(grpid)
+        settings = await get_settings(grpid)
          
-         if settings is not None:
+        if settings is not None:
              buttons = [[
               InlineKeyboardButton('𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝚄𝚃𝚃𝙾𝙽', callback_data=f'settings#button#{settings["button"]}#{str(grp_id)}'),        
               InlineKeyboardButton('𝚂𝙸𝙽𝙶𝙻𝙴' if settings["button"] else '𝙳𝙾𝚄𝙱𝙻𝙴', callback_data=f'settings#button#{settings["button"]}#{str(grp_id)}')
@@ -708,7 +708,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
               ]]
              reply_markup = InlineKeyboardMarkup(buttons)
              await query.message.edit_reply_markup(reply_markup)
-    await query.answer('Piracy Is Crime')
 
 async def auto_filter(client, msg, spoll=False):
     if not spoll:
