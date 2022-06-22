@@ -4,7 +4,7 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}!
 
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
+    ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕 𝑨𝒏𝒅 𝑺𝒐𝒖𝒓𝒄𝒆:
 
 <b>‹›</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴 :</b></b> {}
 <b>‹›</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁 :</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
@@ -12,8 +12,9 @@ class script(object):
 <b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> Python 3
 <b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b> Mongo DB
 <b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b> Heroku
-<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.0.25"""
-    SOURCE_TXT = """🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
+<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.1.35"""
+
+🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
 
 𝑵𝒐𝒕𝒆:
 <b>×</b> 𝙳𝚊𝚝𝚊 𝙱𝚊𝚌𝚔𝚞𝚙 𝙱𝚘𝚝 𝚒𝚜 𝚊 𝚘𝚙𝚎𝚗 𝚜𝚘𝚞𝚛𝚌𝚎 𝚙𝚛𝚘𝚓𝚎𝚌𝚝.
@@ -78,7 +79,36 @@ class script(object):
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /whois - <code>give a user full details</code>
 • /search  - <code>get the film information from various sources.</code>"""
-    TTS_TXT = """𝑻𝒆𝒙𝒕 𝑻𝒐 𝑺𝒑𝒆𝒆𝒄𝒉:
+    ADMIN_TXT = """𝑶𝒘𝒏𝒆𝒓 𝑴𝒐𝒅𝒔:
+
+𝑵𝒐𝒕𝒆:
+<b>×</b> 𝚃𝚑𝚒𝚜 𝚖𝚘𝚍𝚞𝚕𝚎 𝚘𝚗𝚕𝚢 𝚠𝚘𝚛𝚔𝚜 𝚏𝚘𝚛 𝚖𝚢 𝚊𝚍𝚖𝚒𝚗𝚜
+
+𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
+• /logs - <code>to get the rescent errors</code>
+• /stats - <code>to get status of files in db.</code>
+• /delete - <code>to delete a specific file from db.</code>
+• /users - <code>to get list of my users and ids.</code>
+• /chats - <code>to get list of the my chats and ids </code>
+• /leave  - <code>to leave from a chat.</code>
+• /telegraph - <code>Send me Picture or Vide Under (5MB)</code>
+• /disable  -  <code>do disable a chat.</code>
+• /ban  - <code>to ban a user.</code>
+• /unban  - <code>to unban a user.</code>
+• /channel - <code>to get list of total connected channels</code>
+• /broadcast - <code>to broadcast a message to all users</code>"""
+    STATUS_TXT = """🖱 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
+
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
+<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 :</b> {}
+<b>‹› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
+<b>‹› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
+    FOND_TXT = """𝑭𝒐𝒏𝒕 𝑪𝒐𝒑𝒚 & 𝑷𝒍𝒆𝒂𝒔𝒆:
+
+<b>×</b> 𝙵𝙾𝙽𝚃 𝙸𝚂 𝙰 𝙼𝙾𝙳𝚄𝙻𝙴 𝙵𝙾𝚁 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝚂𝚃𝚈𝙻𝙸𝚂𝙷.
+𝙵𝙾𝚁 𝚄𝚂𝙴 𝚃𝙷𝙰𝚃 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝚈𝙿𝙴 /font <your text> 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈."""
+TTS_TXT = """𝑻𝒆𝒙𝒕 𝑻𝒐 𝑺𝒑𝒆𝒆𝒄𝒉:
 <b>×</b> Translate text to speech
 
 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
@@ -110,35 +140,6 @@ class script(object):
 𝑵𝒐𝒕𝒆:
 <b>×</b> 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝙸𝚜 𝙰𝚟𝚊𝚒𝚕𝚊𝚋𝚕𝚎 𝚒𝚗 𝚐𝚘𝚞𝚙𝚜 𝚊𝚗𝚍 𝙿𝙼𝚜
 <b>×</b> 𝚃𝚑𝚒𝚜 𝙲𝚘𝚖𝚖𝚊𝚗𝚍 𝙲𝚊𝚗 𝚋𝚎 𝚞𝚜𝚎𝚍 𝚋𝚢 𝚎𝚟𝚎𝚛𝚢𝚘𝚗𝚎"""
-    ADMIN_TXT = """𝑶𝒘𝒏𝒆𝒓 𝑴𝒐𝒅𝒔:
-
-𝑵𝒐𝒕𝒆:
-<b>×</b> 𝚃𝚑𝚒𝚜 𝚖𝚘𝚍𝚞𝚕𝚎 𝚘𝚗𝚕𝚢 𝚠𝚘𝚛𝚔𝚜 𝚏𝚘𝚛 𝚖𝚢 𝚊𝚍𝚖𝚒𝚗𝚜
-
-𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
-• /logs - <code>to get the rescent errors</code>
-• /stats - <code>to get status of files in db.</code>
-• /delete - <code>to delete a specific file from db.</code>
-• /users - <code>to get list of my users and ids.</code>
-• /chats - <code>to get list of the my chats and ids </code>
-• /leave  - <code>to leave from a chat.</code>
-• /telegraph - <code>Send me Picture or Vide Under (5MB)</code>
-• /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
-• /channel - <code>to get list of total connected channels</code>
-• /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """🖱 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
-
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 :</b> {}
-<b>‹› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
-<b>‹› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}"""
-    FOND_TXT = """𝑭𝒐𝒏𝒕 𝑪𝒐𝒑𝒚 & 𝑷𝒍𝒆𝒂𝒔𝒆:
-
-<b>×</b> 𝙵𝙾𝙽𝚃 𝙸𝚂 𝙰 𝙼𝙾𝙳𝚄𝙻𝙴 𝙵𝙾𝚁 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝚂𝚃𝚈𝙻𝙸𝚂𝙷.
-𝙵𝙾𝚁 𝚄𝚂𝙴 𝚃𝙷𝙰𝚃 𝙵𝙴𝚄𝚃𝚄𝚁𝙴 𝚃𝚈𝙿𝙴 /font <your text> 𝚃𝙷𝙴𝙽 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝙸𝚂 𝚁𝙴𝙰𝙳𝚈."""
     LOG_TEXT_G = """#NewGroup
 
 Group = {}(<code>{}</code>)
