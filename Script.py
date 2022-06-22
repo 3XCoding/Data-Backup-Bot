@@ -54,7 +54,7 @@ class script(object):
 <b>×</b> Make me the admin of your channel if it's private.
 <b>×</b> make sure that your channel does not contains camrips, porn and fake files.
 <b>×</b> Forward the last message to me with quotes.
-   I'll add all the files in that channel to my db."""
+         I'll add all the files in that channel to my db."""
     CONNECTION_TXT = """𝑪𝒐𝒏𝒏𝒆𝒄𝒕𝒊𝒐𝒏𝒔:
 <b>×</b> Used to connect bot to PM for managing filters 
 <b>×</b> it helps to avoid spamming in groups.
@@ -76,6 +76,7 @@ class script(object):
 • /id - <code>get id of a specified user.</code>
 • /info  - <code>get information about a user.</code>
 • /imdb  - <code>get the film information from IMDb source.</code>
+• /whois - <code>give a user full details</code>
 • /search  - <code>get the film information from various sources.</code>"""
     ADMIN_TXT = """𝑶𝒘𝒏𝒆𝒓 𝑴𝒐𝒅𝒔:
 
@@ -89,6 +90,7 @@ class script(object):
 • /users - <code>to get list of my users and ids.</code>
 • /chats - <code>to get list of the my chats and ids </code>
 • /leave  - <code>to leave from a chat.</code>
+• /telegraph - <code>Send me Picture or Vide Under (5MB)</code>
 • /disable  -  <code>do disable a chat.</code>
 • /ban  - <code>to ban a user.</code>
 • /unban  - <code>to unban a user.</code>
