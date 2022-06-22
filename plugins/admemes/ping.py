@@ -1,5 +1,5 @@
 """Telegram Ping / Pong Speed
-Syntax: plugins.helper_functions.ping"""
+Syntax: .ping"""
 
 import time
 import random
