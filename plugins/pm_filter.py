@@ -702,12 +702,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
               ],[
               InlineKeyboardButton('𝚂𝙰𝚅𝙴 𝙵𝙸𝙻𝙴𝚂', callback_data=f'settings#savefiles#{settings["savefiles"]}#{str(grp_id)}'),
               InlineKeyboardButton('𝙾𝙽' if settings["savefiles"] else '𝙾𝙵𝙵', callback_data=f'settings#savefiles#{settings["savefiles"]}#{str(grp_id)}')           
-              ],[
-              InlineKeyboardButton('𝙵𝙸𝙻𝙴 𝙼𝙾𝙳𝙴', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}'),
-              InlineKeyboardButton('𝙿𝙼' if settings["filemode"] else '𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}')           
               ]]
-             reply_markup = InlineKeyboardMarkup(buttons)
-             await query.message.edit_reply_markup(reply_markup)
+              reply_markup = InlineKeyboardMarkup(buttons)
+              await query.message.edit_reply_markup(reply_markup)
 
 async def auto_filter(client, msg, spoll=False):
     if not spoll:
