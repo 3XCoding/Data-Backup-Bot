@@ -701,12 +701,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
               InlineKeyboardButton('𝙵𝙸𝙻𝙴 𝙼𝙾𝙳𝙴', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}'),
               InlineKeyboardButton('𝙿𝙼' if settings["filemode"] else '𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}')           
               ]]
-             pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
-             await update.message.edit_reply_markup(reply_markup=pr0fess0r_99)
-                ]
-            ]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            await query.message.edit_reply_markup(reply_markup)
+            pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
+            await query.message.edit_reply_markup(reply_markup=pr0fess0r_99)
     await query.answer('Piracy Is Crime')
 
 async def auto_filter(client, msg, spoll=False):
