@@ -123,7 +123,6 @@ TTS_TXT = """𝑻𝒆𝒙𝒕 𝑻𝒐 𝑺𝒑𝒆𝒆𝒄𝒉:
 
 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 • /alive - To check you are alive.
-• /help - To get help.
 • /ping - To get your ping.
 
 𝑵𝒐𝒕𝒆:
