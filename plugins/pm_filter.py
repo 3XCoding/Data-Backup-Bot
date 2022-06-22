@@ -620,7 +620,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CONNECTION_TXT,
+            text=script.TTS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
@@ -630,17 +630,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CONNECTION_TXT,
+            text=script.AUTOFILTER_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
     elif query.data == "pings":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.CONNECTION_TXT,
+            text=script.PINGS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
