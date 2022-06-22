@@ -51,7 +51,7 @@ async def start(client, message):
             InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', callback_data='help'),
             InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
-          reply_markup = InlineKeyboardMarkup(buttons)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
         )
@@ -63,7 +63,6 @@ async def start(client, message):
         )
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
-        )
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -108,7 +107,7 @@ async def start(client, message):
             InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', callback_data='help'),
             InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
-          reply_markup = InlineKeyboardMarkup(buttons)
+        reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
         )
@@ -120,7 +119,6 @@ async def start(client, message):
         )
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
-        )
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
