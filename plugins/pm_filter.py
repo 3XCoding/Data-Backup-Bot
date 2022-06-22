@@ -438,7 +438,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
         )
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
@@ -468,7 +467,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
-        )
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -500,7 +498,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
         )
-        )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
@@ -528,7 +525,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         await query.message.edit_text(
             text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
-        )
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
