@@ -672,18 +672,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data.startswith("setgs"):
-         ident, set_type, status, grp_id = query.data.split("#")
-         grpid = await active_connection(str(query.from_user.id))
+        ident, set_type, status, grp_id = query.data.split("#")
+        grpid = await active_connection(str(query.from_user.id))
          
-         if str(grp_id) != str(grpid):
+        if str(grp_id) != str(grpid):
             await update.message.edit("𝙸𝙰𝙼 𝙽𝙾𝚃 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝙰𝙽𝚈 𝙶𝚁𝙾𝚄𝙿..!\n   𝚄𝚂𝙴 𝚃𝙷𝙸𝚂 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 /connect 𝙰𝙽𝙳 𝙲𝙾𝙽𝙽𝙴𝙲𝚃 𝚈𝙾𝚄𝚁 𝙲𝙷𝙰𝚃")
-         if status == "True":
+            return await query.answer('Piracy Is Crime')
+         
+        if status == "True":
             await save_group_settings(grpid, set_type, False)
          else:
-              await save_group_settings(grpid, set_type, True)
+             await save_group_settings(grpid, set_type, True)
+               
          settings = await get_settings(grpid)
+         
          if settings is not None:
-             pr0fess0r_99 = [[
+             buttons = [[
               InlineKeyboardButton('𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝚄𝚃𝚃𝙾𝙽', callback_data=f'settings#button#{settings["button"]}#{str(grp_id)}'),        
               InlineKeyboardButton('𝚂𝙸𝙽𝙶𝙻𝙴' if settings["button"] else '𝙳𝙾𝚄𝙱𝙻𝙴', callback_data=f'settings#button#{settings["button"]}#{str(grp_id)}')
               ],[
@@ -702,8 +706,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
               InlineKeyboardButton('𝙵𝙸𝙻𝙴 𝙼𝙾𝙳𝙴', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}'),
               InlineKeyboardButton('𝙿𝙼' if settings["filemode"] else '𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data=f'settings#filemode#{settings["filemode"]}#{str(grp_id)}')           
               ]]
-             pr0fess0r_99 = InlineKeyboardMarkup(pr0fess0r_99)
-             await query.message.edit_reply_markup(reply_markup=pr0fess0r_99)
+             reply_markup = InlineKeyboardMarkup(buttons)
+             await query.message.edit_reply_markup(reply_markup)
     await query.answer('Piracy Is Crime')
 
 async def auto_filter(client, msg, spoll=False):
