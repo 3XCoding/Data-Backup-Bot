@@ -511,7 +511,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔆 𝚂𝙾𝚄𝚁𝙲𝙴', url='https://t.me/BharatTorrentPro'),
             ],[
             InlineKeyboardButton('🛕 𝙷𝙾𝙼𝙴', callback_data='start'),
-            InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
+            InlineKeyboardButton('🗑 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
