@@ -500,7 +500,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.HELP_TXT.format(query.from_user.mention),
+            text=script.GMENU_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
         )  
@@ -508,7 +508,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton('🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽', url='https://t.me/VijayAdithyaa/325'),
             ],[
-            InlineKeyboardButton('🔆 𝚂𝙾𝚄𝚁𝙲𝙴', callback_data='source')
+            InlineKeyboardButton('🔆 𝚂𝙾𝚄𝚁𝙲𝙴', url='https://t.me/BharatTorrentPro'),
             ],[
             InlineKeyboardButton('🛕 𝙷𝙾𝙼𝙴', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴', callback_data='close_data'),
