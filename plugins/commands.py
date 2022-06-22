@@ -361,6 +361,7 @@ async def settings(client, message):
         return
 
     settings = await get_settings(grp_id)
+    
     if settings is not None:
         buttons = [[ InlineKeyboardButton('𝙵𝙸𝙻𝚃𝙴𝚁 𝙱𝚄𝚃𝚃𝙾𝙽', callback_data=f'settings#button#{settings["button"]}#{grp_id}'), InlineKeyboardButton('𝚂𝙸𝙽𝙶𝙻𝙴' if settings["button"] else '𝙳𝙾𝚄𝙱𝙻𝙴', callback_data=f'settings#button#{settings["button"]}#{grp_id}') ],
                    [ InlineKeyboardButton('𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝙼𝚂𝙶', callback_data=f'settings#welcome#{settings["welcome"]}#{grp_id}'), InlineKeyboardButton('𝙾𝙽' if settings["welcome"] else '𝙾𝙵𝙵', callback_data=f'settings#welcome#{settings["welcome"]}#{grp_id}') ],         
@@ -369,7 +370,15 @@ async def settings(client, message):
                    [ InlineKeyboardButton('𝚂𝙰𝚅𝙴 𝙵𝙸𝙻𝙴𝚂', callback_data=f'settings#savefiles#{settings["savefiles"]}#{grp_id}'), InlineKeyboardButton('𝙾𝙽' if settings["savefiles"] else '𝙾𝙵𝙵', callback_data=f'settings#savefiles#{settings["savefiles"]}#{grp_id}') ],
                    [ InlineKeyboardButton('𝙵𝙸𝙻𝙴 𝙼𝙾𝙳𝙴', callback_data=f'settings#filemode#{settings["filemode"]}#{grp_id}'), InlineKeyboardButton('𝙿𝙼' if settings["filemode"] else '𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data=f'settings#filemode#{settings["filemode"]}#{grp_id}') ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await update.reply_text(text=SETTINGS_MESSAGE.format(title=title), reply_markup=reply_markup, disable_web_page_preview=True, reply_to_message_id=update.id)
+        await message.reply_text(
+            text=f"<b>Change Your Settings for {title} As Your Wish ⚙</b>",
+            reply_markup=reply_markup,
+            disable_web_page_preview=True,
+            parse_mode="html",
+            reply_to_message_id=message.message_id
+        )
+        
+        
         
 @Client.on_message(filters.command('set_template'))
 async def save_template(client, message):
