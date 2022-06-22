@@ -225,9 +225,6 @@ def extract_user(message: Message) -> Union[int, str]:
     if message.reply_to_message:
         user_id = message.reply_to_message.from_user.id
         user_first_name = message.reply_to_message.from_user.first_name
-        U_MAN = message.from_user.id
-        UF_MAN = message.from_user.first_name
-
     elif len(message.command) > 1:
         if (
             len(message.entities) > 1 and
@@ -248,6 +245,8 @@ def extract_user(message: Message) -> Union[int, str]:
     else:
         user_id = message.from_user.id
         user_first_name = message.from_user.first_name
+        U_MAN = message.from_user.id
+        UF_MAN = message.from_user.first_name
     return (user_id, user_first_name)
 
 def list_to_str(k):
