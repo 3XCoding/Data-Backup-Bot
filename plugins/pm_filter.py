@@ -80,7 +80,7 @@ async def next_page(bot, query):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🗂 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: \n{search} ', 'dupe')
+            InlineKeyboardButton(f'🗂 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: \n{search} ', 'dupe')
         ]
     )
     btn.insert(1,
@@ -772,7 +772,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🗂 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: \n{search} ', 'dupe')
+            InlineKeyboardButton(f'🗂 𝚈𝙾𝚄𝚁 𝚁𝙴𝚀𝚄𝙴𝚂𝚃 𝙵𝙸𝙻𝙴 𝙽𝙰𝙼𝙴: \n{search} ', 'dupe')
         ]
     )
     btn.insert(1,
