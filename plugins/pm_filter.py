@@ -110,7 +110,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("Next Pages Group Not Support. You Try The Bot!",show_alert=True)
+        await query.answer("𝙰𝚁𝙴 𝙲𝙻𝙸𝙲𝙺𝙸𝙽𝙶 𝙾𝙽 𝙰𝙽 𝙾𝙻𝙳 𝙱𝚄𝚃𝚃𝙾𝙽 𝚆𝙷𝙸𝙲𝙷 𝙸𝚂 𝙴𝚇𝙿𝙸𝚁𝙴𝙳.",show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
