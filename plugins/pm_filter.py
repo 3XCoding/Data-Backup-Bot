@@ -915,7 +915,6 @@ async def auto_filter(client, msg, spoll=False):
         fuk = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await fuk.delete()
-         
 
 async def advantage_spell_chok(msg):
     query = re.sub(
