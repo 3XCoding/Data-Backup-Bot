@@ -49,7 +49,7 @@ async def start(client, message):
             InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/VijayAdithyaa')
             ],[
-            InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', callback_data='help'),
+            InlineKeyboardButton('⚙️ 𝙼𝙴𝙽𝚄', callback_data='help'),
             InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -92,7 +92,7 @@ async def start(client, message):
             InlineKeyboardButton('🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃', url='https://t.me/BharatTorrentPro'),
             InlineKeyboardButton('📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', url='https://t.me/filmboxcommunity')
             ],[
-            InlineKeyboardButton('⚙️ 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂', callback_data='help'),
+            InlineKeyboardButton('⚙️ 𝙼𝙴𝙽𝚄', callback_data='help'),
             InlineKeyboardButton('💡 𝙰𝙱𝙾𝚄𝚃', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
