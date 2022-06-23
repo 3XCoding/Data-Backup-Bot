@@ -127,7 +127,7 @@ async def get_poster(query, bulk=False, id=False, file=None):
         "cinematographer":list_to_str(movie.get("cinematographer")),
         "music_team": list_to_str(movie.get("music department")),
         "distributors": list_to_str(movie.get("distributors")),
-        'release_date': date,
+        'release_date': imdb['release_date'],
         'year': movie.get('year'),
         'genres': list_to_str(movie.get("genres")),
         'poster': movie.get('full-size cover url'),
