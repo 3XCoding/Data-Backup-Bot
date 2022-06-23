@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
-@Client.on_message(filters.private & filters.command<code>(["font"])</code>)
+@Client.on_message(filters.private & filters.command(["font"]))
 async def style_buttons(c, m, cb=False):
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
@@ -103,7 +103,7 @@ async def nxt(c, m):
 @Client.on_callback_query(filters.regex('^style'))
 async def style(c, m):
     await m.answer()
-    cmd, style = m.data.split('+')
+    cmd, style = m.data.split('<code>+</code>')
 
     if style == 'typewriter':
         cls = Fonts.typewriter
