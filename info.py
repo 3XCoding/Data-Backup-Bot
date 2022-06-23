@@ -84,7 +84,7 @@ CH_FILTER = int(environ.get('CH_FILTER', 0))
 START_TXT = environ.get("START_TXT", "<b>👋 𝙷𝙸 {mention}</b>\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽...\n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa")
 BTN_LOCK_TEXT = environ.get("BTN_LOCK_TEXT", "𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣.")
 GOOD_BYE = environ.get("GOOD_BYE", "")
-WELCOME = environ.get("WELCOME", "<b>👋 𝙷𝙸 {mention}.</b>\n\n𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first_name} {last_name}\n❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 : {from_user.id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴:</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\nThank you for join {group_name}\n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa")
+WELCOME = environ.get("WELCOME", "<b>👋 𝙷𝙸 {mention}.</b>\n𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first_name} {last_name}\n<b>❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 :</b> {from_user.id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴 :</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 :</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\nThank you for join {group_name}\n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 :</b> @VijayAdithyaa")
 FORCE_TEXT = environ.get("FORCE_TEXT", "𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!")
 
 # Others
