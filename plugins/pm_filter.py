@@ -542,12 +542,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "gmenu":
         buttons = [[
             InlineKeyboardButton("𝙵𝙾𝙽𝚃𝚂", callback_data="fond"),
+            InlineKeyboardButton("𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺", callback_data="abook")
             ],[
             InlineKeyboardButton("𝚃𝙴𝚇𝚃 𝚃𝙾 𝚂𝙿𝙴𝙴𝙲𝙷", callback_data="ttss"),
             InlineKeyboardButton("𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷", callback_data="tele")
             ],[
-            InlineKeyboardButton("𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺", callback_data="abook"),
-            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="help")
+            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="help"),
+            InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
