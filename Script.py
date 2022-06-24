@@ -106,7 +106,6 @@ class script(object):
 • /users - <code>to get list of my users and ids.</code>
 • /chats - <code>to get list of the my chats and ids </code>
 • /leave  - <code>to leave from a chat.</code>
-• /telegraph - <code>Send me Picture or Vide Under (5MB)</code>
 • /disable  -  <code>do disable a chat.</code>
 • /ban  - <code>to ban a user.</code>
 • /unban  - <code>to unban a user.</code>
@@ -142,7 +141,7 @@ class script(object):
 
 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 
-• /telegraph - Send me Picture or Vide Under (5MB)
+• /telegraph - Send me Picture or Video Under (5MB)
 
 𝑵𝒐𝒕𝒆:
 
