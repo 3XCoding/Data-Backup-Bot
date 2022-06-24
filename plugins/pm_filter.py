@@ -659,7 +659,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "fond":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='gmenu')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -669,7 +669,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "ttss":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='gmenu')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -679,7 +679,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "abook":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='gmenu')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -689,7 +689,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "tele":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help')
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='gmenu')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -699,7 +699,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "stats":
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
             InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -718,7 +718,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "rfrsh":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='help'),
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
             InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
