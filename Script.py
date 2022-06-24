@@ -4,17 +4,15 @@ class script(object):
     HELP_TXT = """𝙷𝙴𝚈 {}!
 
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
-    ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕 𝑨𝒏𝒅 𝑺𝒐𝒖𝒓𝒄𝒆:
+    ABOUT_TXT = """💡 𝑨𝒃𝒐𝒖𝒕:
 
 <b>‹›</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴 :</b></b> {}
 <b>‹›</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁 :</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 :</b> Pyrogram
-<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> Python 3
-<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b> Mongo DB
-<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b> Heroku
-<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.1.35
-
-🔆 𝑺𝒐𝒖𝒓𝒄𝒆:
+<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 :</b> <a href=https://github.com/pyrogram/pyrogram>Pyrogram</a>
+<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> <a href=https://www.python.com> Python 3</a>
+<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b>  <a href=https://www.mongoDB.com>Mongo DB</a>
+<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b>  <a href=https://heroku.com>Heroku</a>
+<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.1.40
 
 𝑵𝒐𝒕𝒆:
 
@@ -24,7 +22,8 @@ class script(object):
 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔:
 
 <b>¥</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-<b>¥</b> <a href=https://t.me/TeamEvamaria>Eva Maria</a>"""
+<b>¥</b> <a href=https://t.me/TeamEvamaria>Eva Maria</a>
+<b>¥</b> <a href=https://t.me/mkn_bots_updates> Mkn Bots</a>"""
     MANUELFILTER_TXT = """𝑭𝒊𝒍𝒕𝒆𝒓𝒔:
 
 <b>¥</b> 𝙵𝚒𝚕𝚝𝚎𝚛 𝚒𝚜 𝚝𝚑𝚎 𝚏𝚎𝚊𝚝𝚞𝚛𝚎 𝚠𝚎𝚛𝚎 𝚞𝚜𝚎𝚛𝚜 𝚌𝚊𝚗 𝚜𝚎𝚝 𝚊𝚞𝚝𝚘𝚖𝚊𝚝𝚎𝚍 𝚛𝚎𝚙𝚕𝚒𝚎𝚜 𝚏𝚘𝚛 𝚊 𝚙𝚊𝚛𝚝𝚒𝚌𝚞𝚕𝚊𝚛 𝚔𝚎𝚢𝚠𝚘𝚛𝚍 𝚊𝚗𝚍 𝙴𝚟𝚊𝙼𝚊𝚛𝚒𝚊 𝚠𝚒𝚕𝚕 𝚛𝚎𝚜𝚙𝚘𝚗𝚍 𝚠𝚑𝚎𝚗𝚎𝚟𝚎𝚛 𝚊 𝚔𝚎𝚢𝚠𝚘𝚛𝚍 𝚒𝚜 𝚏𝚘𝚞𝚗𝚍 𝚝𝚑𝚎 𝚖𝚎𝚜𝚜𝚊𝚐𝚎.
@@ -85,8 +84,7 @@ class script(object):
 
 𝑵𝒐𝒕𝒆:
 
-<b>¥</b> These are the extra features of Data Backup Bot
-
+<b>¥</b> 𝚃𝚑𝚎𝚜𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚎𝚡𝚝𝚛𝚊 𝚏𝚎𝚊𝚝𝚞𝚛𝚎𝚜 𝚘𝚏 𝙳𝚊𝚝𝚊 𝙱𝚊𝚌𝚔𝚞𝚙 𝙱𝚘𝚝
 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 𝑨𝒏𝒅 𝑼𝒔𝒂𝒈𝒆:
 
 • /id - <code>get id of a specified user.</code>
