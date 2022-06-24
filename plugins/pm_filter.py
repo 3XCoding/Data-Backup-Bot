@@ -125,7 +125,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)} × {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{get_size(file.file_size)} × {file.file_name} ", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -134,7 +134,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"{file.file_name} ", callback_data=f'files#{file.file_id}'
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}", 
@@ -573,8 +573,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://t.me/VijayAdithyaa/325")
             ],[
+            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="gmenu"),
             InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start"),
-            InlineKeyboardButton("🗑 𝙲𝙻𝙾𝚂𝙴", callback_data="close_data"),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
