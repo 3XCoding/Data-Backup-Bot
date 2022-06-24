@@ -542,13 +542,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "gmenu":
         buttons = [[
             InlineKeyboardButton("𝙵𝙾𝙽𝚃𝚂", callback_data="fond"),
-            InlineKeyboardButton("𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺", callback_data="abook")
             ],[
             InlineKeyboardButton("𝚃𝙴𝚇𝚃 𝚃𝙾 𝚂𝙿𝙴𝙴𝙲𝙷", callback_data="ttss"),
-            InlineKeyboardButton("𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷", callback_data="tele")
+            InlineKeyboardButton("𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙿𝙷", callback_data="tele"),
             ],[
-            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="help"),
-            InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="stats"),
+            InlineKeyboardButton("𝙰𝚄𝙳𝙸𝙾-𝙱𝙾𝙾𝙺", callback_data="abook"),
+            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="help")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -573,8 +572,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons= [[
             InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://t.me/VijayAdithyaa/325")
             ],[
-            InlineKeyboardButton("❮ 𝙱𝙰𝙲𝙺", callback_data="gmenu"),
             InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start"),
+            InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="stats"),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
