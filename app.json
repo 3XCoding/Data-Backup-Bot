@@ -106,7 +106,7 @@
         },
         "START_TXT": {
             "description": "bot start message text [ {mention} = bot startd user name {bot_name} = your bot name",
-            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽... \n\n<b>𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa",
+            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽... \n\n<b>🧑🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa",
             "required": false
         },
         "BTN_LOCK_TEXT": {
