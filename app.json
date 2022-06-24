@@ -62,7 +62,7 @@
         },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "🗂<b>File Name :</b> {file_name}\n\n 💽<b>Size :</b> {file_size}\n\n🧑🏻‍💻<b>Powered By:</b> @HeyNatashaBot <b>×</b> @BharatTorrentPro ",
+            "value": "🗂<b>File Name :</b> {file_name}\n\n 💽<b>Size :</b> {file_size}\n\n<b>🧑🏻‍💻𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈 :</b> @HeyNatashaBot <b>×</b> @BharatTorrentPro",
             "required": false
         },
         "DATABASE_URI": {
@@ -106,7 +106,7 @@
         },
         "START_TXT": {
             "description": "bot start message text [ {mention} = bot startd user name {bot_name} = your bot name",
-            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽... \n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa",
+            "value": "👋 𝙷𝙴𝙻𝙾 {mention}\n\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 {bot_name},\n𝙸 𝙲𝙰𝙽 𝙿𝚁𝙾𝚅𝙸𝙳𝙴 𝙼𝙾𝚅𝙸𝙴𝚂, 𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙼𝙰𝙺𝙴 𝙼𝙴 𝙰𝙳𝙼𝙸𝙽... \n\n<b>𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa",
             "required": false
         },
         "BTN_LOCK_TEXT": {
@@ -119,7 +119,7 @@
         },
         "WELCOME": {
             "description": "custom group welcome messege (new user neme use this code= {user} / your group name use this code= {chat})",
-            "value": "<b>👋 𝙷𝙸 {mention}.</b>\n𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first_name} {last_name}\n<b>❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 :</b> {from_user.id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴:</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\nThank you for join {group_name}\n\n<b>𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈:</b> @VijayAdithyaa",
+            "value": "<b>👋 𝙷𝙸 {mention}.</b>\n🥳 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 {group_name}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first_name} {last_name}\n<b>❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 :</b> {from_user.id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴:</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴:</b> <a href='tg://user?id={from_user.id}'><b>Click Here</b></a>\n🎉 Thank you for join {group_name}\n\n<b>🧑🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa",
             "required": false        
         },
         "P_TTI_SHOW_OFF": {
