@@ -195,25 +195,21 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             **locals()
         )
     else:
-        caption= "No Results"
+        caption = "No Results"
     if imdb.get('poster'):
         try:
             await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
-            await quer_y.sleep(IMDB_DELET_TIME)
-            await hmm.message.delete()
+            await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
         except Exception as e:
             logger.exception(e)
-            fek = await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-            await quer_y.sleep(IMDB_DELET_TIME)
-            await fek.message.delete()
+            await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+        await quer_y.message.delete(IMDB_DELET_TIME)
     else:
-       fuk = await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-       await quer_y.answer()
-       await quer_y.sleep(IMDB_DELET_TIME)
-       await fuk.delete()
+        await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+    await quer_y.answer()
+    await quer_y.message.delete(IMDB_DELET_TIME)
 
 
