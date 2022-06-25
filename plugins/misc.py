@@ -1,6 +1,8 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
+from databasevs.connections_mdb import active_connection, all_connections, delete_connection, if_active, make_active, make_inactive, \
+    make_inactive
 from info import IMDB_TEMPLATE, IMDB_DELET_TIME
 from utils import extract_user, get_file_id, get_poster, last_online
 import time
