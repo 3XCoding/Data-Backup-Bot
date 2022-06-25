@@ -162,7 +162,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
         ]
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
-        cap = IMDB_TEMPLATE.format(
+        caption= IMDB_TEMPLATE.format(
             query = imdb['title'],
             title = imdb['title'],
             votes = imdb['votes'],
@@ -195,7 +195,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             **locals()
         )
     else:
-        caption = "No Results"
+        caption= "No Results"
     if imdb.get('poster'):
         try:
             hehe = await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
