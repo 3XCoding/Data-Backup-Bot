@@ -208,13 +208,13 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             hehe = await message.reply_photo(photo=imdb.get('poster'), caption=caption, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()
-            await message.reply_text(text=f"haha", disable_notification = True)
+            await message.reply_text(text=f"", disable_notification = True)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(IMDB_DELET_TIME)
-            await hmm.edit_text(text=f"haha", disable_notification = True)
+            await hmm.edit_text(text=f"", disable_notification = True)
         except Exception as e:
             logger.exception(e)
             fek = await message.reply_photo(photo="", caption=caption, reply_markup=InlineKeyboardMarkup(btn))
