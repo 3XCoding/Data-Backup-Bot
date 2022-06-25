@@ -195,28 +195,24 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             **locals()
         )
     else:
-        cap = "No Results"
+        caption = "No Results"
     if imdb.get('poster'):
         try:
-            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await quer_y.sleep(IMDB_DELET_TIME)
+            hehe = await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
             await hehe.delete()
             await message.reply_text(text=f"", disable_notification = False)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await quer_y.sleep(IMDB_DELET_TIME)
-            await quer_y.edit_text(text=f"", disable_notification = False)
+            hmm = await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await hmm.message.delete()
         except Exception as e:
             logger.exception(e)
-            fek = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-            await quer_y.message.sleep(IMDB_DELET_TIME)
-            await quer_y.edit_text(text=f"")
+            fuk = await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+            await quer_y.message.delete()
     else:
-        fuk = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
-        await quer_y.message.sleep(IMDB_DELET_TIME)
-        await quer_y.message.delete()
-
+       fuk = await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+       await quer_y.answer()
+       await fuk.delete()
 
 
