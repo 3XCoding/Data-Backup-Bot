@@ -492,16 +492,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -522,16 +522,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -552,16 +552,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -578,16 +578,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
         )
         await query.message.edit_text(
-            text="𝙿𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐. . ."
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
         )
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
