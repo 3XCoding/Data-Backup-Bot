@@ -162,7 +162,7 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
         ]
     message = quer_y.message.reply_to_message or quer_y.message
     if imdb:
-        caption = IMDB_TEMPLATE.format(
+        cap = IMDB_TEMPLATE.format(
             query = imdb['title'],
             title = imdb['title'],
             votes = imdb['votes'],
@@ -195,22 +195,28 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
             **locals()
         )
     else:
-        caption = "No Results"
+        cap = "No Results"
     if imdb.get('poster'):
         try:
-            await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo=imdb.get('poster'), caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await hehe.delete()
+            await message.reply_text(text=f"", disable_notification = False)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
-            await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            hmm = await message.reply_photo(photo=poster, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await hmm.edit_text(text=f"", disable_notification = False)
         except Exception as e:
             logger.exception(e)
-            await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-        await quer_y.message.delete()
+            fek = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
+            await fek.edit_text(text=f"")
     else:
-        await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
-    await quer_y.answer()
-
+        fuk = await message.reply_photo(photo="", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+        await asyncio.sleep(IMDB_DELET_TIME)
+        await fuk.delete()
 
 
 
