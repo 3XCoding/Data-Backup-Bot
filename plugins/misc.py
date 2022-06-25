@@ -1,7 +1,7 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant, MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty
-from info import IMDB_TEMPLATE
+from info import IMDB_TEMPLATE, IMDB_DELET_TIME
 from utils import extract_user, get_file_id, get_poster, last_online
 import time
 from datetime import datetime
@@ -199,20 +199,24 @@ async def imdb_callback(bot: Client, quer_y: CallbackQuery):
     if imdb.get('poster'):
         try:
             hehe = await quer_y.message.reply_photo(photo=imdb['poster'], caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
             await hehe.delete()
             await message.reply_text(text=f"", disable_notification = False)
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
             pic = imdb.get('poster')
             poster = pic.replace('.jpg', "._V1_UX360.jpg")
             hmm = await quer_y.message.reply_photo(photo=poster, caption=caption, reply_markup=InlineKeyboardMarkup(btn))
+            await asyncio.sleep(IMDB_DELET_TIME)
             await hmm.message.delete()
         except Exception as e:
             logger.exception(e)
             fuk = await quer_y.message.reply(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
+            await asyncio.sleep(IMDB_DELET_TIME)
             await quer_y.message.delete()
     else:
        fuk = await quer_y.message.edit(caption, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=False)
        await quer_y.answer()
+       await asyncio.sleep(IMDB_DELET_TIME)
        await fuk.delete()
 
 
