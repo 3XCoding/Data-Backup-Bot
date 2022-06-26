@@ -8,7 +8,7 @@ from info import WELCOME, GOOD_BYE
 @Client.on_message(filters.new_chat_members)
 async def welcome(bot,message):
 	chatid= message.chat.id
-	await bot.send_message(WELCOME.format(user = message.from_user.mention, chat_name = message.chat.username), chat_id=chatid)                    
+	await bot.send_message(WELCOME.format(user = message.from_user.mention, chat_name = message.chat.username, user_id = message.from_user.id, user_dc = message.dc_id), chat_id=chatid)                    
 	
 @Client.on_message(filters.left_chat_member)
 async def goodbye(bot,message):
