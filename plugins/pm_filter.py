@@ -495,10 +495,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ●</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ●</b>"
         )
         await query.message.edit_text(
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
@@ -525,10 +525,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ●</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ●</b>"
         )
         await query.message.edit_text(
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
@@ -555,10 +555,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ●</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ●</b>"
         )
         await query.message.edit_text(
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
@@ -581,10 +581,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ○ ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ●</b>"
         )
         await query.message.edit_text(
-            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ○</b>"
+            text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ●</b>"
         )
         await query.message.edit_text(
             text="<b>ᴘʀᴏᴄᴇꜱꜱɪɴɢ ● ● ●</b>"
