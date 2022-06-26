@@ -1,4 +1,5 @@
 import os
+from Script import script
 from pyrogram import Client, filters
 from pyrogram.types import Message, User
 from info import WELCOME, GOOD_BYE
