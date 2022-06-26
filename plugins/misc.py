@@ -152,7 +152,7 @@ async def imdb_search(client, message):
         await k.delete()
     else:
         await message.reply('Give me a movie / series Name')
-        await asyncio.sleep(IMDB_DELET_TIME)
+        await asyncio.sleep(3)
         await k.delete()
 
 @Client.on_callback_query(filters.regex('^imdb'))
