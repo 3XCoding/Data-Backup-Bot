@@ -159,29 +159,6 @@ async def next_page(bot, query):
         pass
     await query.answer()
 
-@Client.on_callback_query(filters.regex(r"^pspolling"))
-async def advantage_spoll_choker(bot, query):
-    _, user, movie_ = query.data.split('#')
-    if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝚄𝚜𝚎𝚜 𝚘𝚗𝚕𝚢 𝙰𝚕𝚕𝚘𝚠𝚎𝚍", show_alert=True)
-    if movie_  == "close_spellcheck":
-        return await query.message.delete()
-    movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
-    if not movies:
-        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
-    movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
-    k = await manual_filters(bot, query.message, text=movie)
-    if k==False:
-        files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
-        if files:
-            k = (movie, files, offset, total_results)
-            await auto_filter(bot, query, k)
-        else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
-            await asyncio.sleep(10)
-            await k.delete()
-
 
 @Client.on_callback_query(filters.regex(r"^pspolling"))
 async def advantage_spoll_choker(bot, query):
@@ -231,7 +208,7 @@ async def advantage_spell_chok(msg):
         for mv in g_s:
             match = reg.match(mv)
             if match:
-                gs_parsed.append(match.group(1))
+                gs_parsed.append(match.private(1))
     user = msg.from_user.id if msg.from_user else 0
     movielist = []
     gs_parsed = list(dict.fromkeys(gs_parsed))  # removing duplicates https://stackoverflow.com/a/7961425
@@ -261,6 +238,7 @@ async def advantage_spell_chok(msg):
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(350)
     await ook.delete()
+
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
