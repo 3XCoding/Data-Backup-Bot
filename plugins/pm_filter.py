@@ -968,6 +968,7 @@ async def advantage_spell_chok(msg):
                     reply_markup=InlineKeyboardMarkup(btn))
     await asyncio.sleep(350)
     await ook.delete()
+@Client.on_message(filters.group)
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
     name = text or message.text
