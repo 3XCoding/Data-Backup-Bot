@@ -7,7 +7,7 @@ import heroku3
 import requests
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
-from database.users_chats_db import db
+from databasevs.users_chats_db import db
 
 #=====================================================
 BOT_START_TIME = time.time()
