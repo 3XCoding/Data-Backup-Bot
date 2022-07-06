@@ -36,7 +36,6 @@ async def pdf_to_text(bot, message):
               # Change Voice by editing the Language
                 language = 'en-in'  # 'en': ['en-us', 'en-ca', 'en-uk', 'en-gb', 'en-au', 'en-gh', 'en-in',
                                     # 'en-ie', 'en-nz', 'en-ng', 'en-ph', 'en-za', 'en-tz'],
-                language = 'ta-in'  # 'ta': ['ta-in', 'ta-sl'],
                 tts_file = gTTS(text=output_text, lang=language, slow=False) 
                 tts_file.save(f"{message.chat.id}.mp3")      
                 with open(f"{message.chat.id}.mp3", "rb") as speech:
