@@ -58,9 +58,9 @@ async def save_group(bot, message):
                                                  caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton("Group", url="https://t.me/BharatTorrentPro")
+                                                                           InlineKeyboardButton("𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="https://t.me/BharatTorrentPro")
                                                                            ],[
-                                                                           InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/VijayAdithyaa")
+                                                                           InlineKeyboardButton("𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url="https://t.me/VijayAdithyaa")
 
                                                                          ]]
                                                  ),
