@@ -107,7 +107,7 @@ class script(object):
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """✘ 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
+    STATS_TXT = """✘ 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
 
 <b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
 <b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
@@ -164,3 +164,8 @@ Name - {}
 
 MELCOW_ENG = """ <b>👋 𝙷𝙸 {from_user.id}.</b>\n🥳 Welcome To {chat}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first} {last}\n<b>❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 :</b> {user_id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴:</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴:</b> <a href='tg://user?id={user}'><b>Click Here</b></a>\n🎉 Thank you for join {chat}\n\n<b>🧑🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa
 """
+    STATUS_TXT = """✘ 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁:
+DB Status
+✧ 𝖡𝗈𝗍 𝖴𝗉𝗍𝗂𝗆𝖾: {uptime}
+✧ {quota_details}
+✧ {disk} """
