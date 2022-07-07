@@ -6,13 +6,13 @@ class script(object):
 <b>𝙷𝙴𝚁𝙴 𝙸𝚂 𝚃𝙷𝙴 𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂.</b>"""
     ABOUT_TXT = """✘ 𝑨𝒃𝒐𝒖𝒕:
 
-<b>‹›</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴 :</b></b> <a href=http://t.me/HeyNatashaBot>{}</a>
-<b>‹›</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁 :</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
-<b>‹›</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 :</b> <a href=https://github.com/pyrogram/pyrogram>Pyrogram</a>
-<b>‹›</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> <a href=https://www.python.com> Python 3</a>
-<b>‹›</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b>  <a href=https://www.mongoDB.com>Mongo DB</a>
-<b>‹›</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b>  <a href=https://heroku.com>Heroku</a>
-<b>‹›</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.1.46
+<b>✧</b> <b>𝙼𝚈 𝙽𝙰𝙼𝙴 :</b></b> <a href=http://t.me/HeyNatashaBot>{}</a>
+<b>✧</b> <b>𝙲𝚁𝙴𝙰𝚃𝙾𝚁 :</b> <a href=https://t.me/VijayAdithyaa>ᴀᴅɪᴛʏᴀ ᴀʀ</a>
+<b>✧</b> <b>𝙻𝙸𝙱𝚁𝙰𝚁𝚈 :</b> <a href=https://github.com/pyrogram/pyrogram>Pyrogram</a>
+<b>✧</b> <b>𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴 :</b> <a href=https://www.python.com> Python 3</a>
+<b>✧</b> <b>𝙳𝙰𝚃𝙰 𝙱𝙰𝚂𝙴 :</b>  <a href=https://www.mongoDB.com>Mongo DB</a>
+<b>✧</b> <b>𝙱𝙾𝚃 𝚂𝙴𝚁𝚅𝙴𝚁 :</b>  <a href=https://heroku.com>Heroku</a>
+<b>✧</b> <b>𝙱𝚄𝙸𝙻𝙳 𝚂𝚃𝙰𝚃𝚄𝚂 :</b> v1.1.46
 
 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔:
 
