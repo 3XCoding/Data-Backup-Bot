@@ -667,7 +667,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "status":
+    elif query.data == "stats":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('🌐 𝙳𝚈𝙽𝙾', callback_data='status')
