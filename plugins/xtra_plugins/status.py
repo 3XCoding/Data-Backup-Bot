@@ -7,7 +7,7 @@ import heroku3
 import requests
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
-from databasevs.users_chats_db import db
+from database.users_chats_db import db
 
 #=====================================================
 BOT_START_TIME = time.time()
@@ -15,8 +15,8 @@ BOT_START_TIME = time.time()
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
-@Client.on_message(filters.command('status'))
-async def bot_status(client,message):
+@Client.on_callback_query(filters.regex("^status$"))
+async def bot_status(client,message: CallbackQuery):
     if HEROKU_API_KEY:
         try:
             server = heroku3.from_key(HEROKU_API_KEY)
@@ -83,14 +83,14 @@ Heroku Account Status
             f"> FREE  :  {free}\n\n"
     except:
         disk = ""
-
-    await message.reply_text(
+    buttons = [[InlineKeyboardButton("Back", callback_data="stats")]]
+    await message.message.edit_text(
         "𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁\n\n"
         "DB Status\n"
         f"➪ 𝖡𝗈𝗍 𝖴𝗉𝗍𝗂𝗆𝖾: {uptime}\n"
         f"{quota_details}"
         f"{disk}",
-        quote=True,
-        parse_mode="md"
+        parse_mode="md",
+        reply_markup=InlineKeyboardMarkup(buttons),
     )
 
