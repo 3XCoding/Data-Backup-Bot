@@ -29,11 +29,13 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
+
 #=====================================================
 BOT_START_TIME = time.time()
 
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
+
 
 BUTTONS = {}
 SPELL_CHECK = {}
@@ -690,7 +692,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "rfrsh":
         buttons = [[
-            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='stats'),
+            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data=''),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
