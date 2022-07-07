@@ -675,7 +675,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🌐 𝙳𝚈𝙽𝙾', callback_data='status')
         ], [
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
-            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='rfrsh')
+            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -689,37 +689,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "rfrsh":
-        buttons = [[
-            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data=''),
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "status":
-        await query.answer("Fetching MongoDb DataBase Status")
-        buttons = [[
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='stats')
-        ]]  
-        await message.reply_text(
-        "𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁\n\n"
-        "DB Status\n"
-        f"➪ 𝖡𝗈𝗍 𝖴𝗉𝗍𝗂𝗆𝖾: {uptime}\n"
-        f"{quota_details}"
-        f"{disk}",
-        quote=True,
-        parse_mode="md"
         )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
