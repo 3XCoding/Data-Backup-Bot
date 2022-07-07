@@ -705,6 +705,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "status":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 𝐁𝐀𝐂𝐊', callback_data='stats')
+        ]]  
+        await message.reply_text(
+        "𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁\n\n"
+        "DB Status\n"
+        f"𝖡𝗈𝗍 𝖴𝗉𝗍𝗂𝗆𝖾: {uptime}\n"
+        f"{quota_details}"
+        f"{disk}",
+        quote=True,
+        parse_mode="md"
+        )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
