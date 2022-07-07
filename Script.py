@@ -154,12 +154,13 @@ class script(object):
 • /audiobook: 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝗍𝗁𝖾 𝖺𝗎𝖽𝗂𝗈"""
 MELCOW_ENG = """<b>👋 𝙷𝙸 {from_user.id}.</b>
 🥳 Welcome To {chat}!\n\n<b>❯ 𝙽𝙰𝙼𝙴 :</b> {first} {last}\n<b>❯ 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼 𝙸𝙳 :</b> {user_id}\n<b>❯ 𝙳𝙰𝚃𝙰 𝙲𝙴𝙽𝚃𝚁𝙴:</b> {dc_id}\n<b>❯ 𝚄𝚂𝙴𝚁 𝙿𝚁𝙾𝙵𝙸𝙻𝙴:</b> <a href='tg://user?id={user}'><b>Click Here</b></a>\n🎉 Thank you for join {chat}\n\n<b>🧑🏻‍💻 𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa"""
-    LOG_TEXT_G = """#NewGroup
+LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
 """
-    LOG_TEXT_P = """#NewBotUser:
+LOG_TEXT_P = """#NewBotUser
 ID - <code>{}</code>
 Name - {}
 """
+
