@@ -35,7 +35,6 @@ BOT_START_TIME = time.time()
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
-
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
@@ -702,6 +701,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
         quote=True,
         parse_mode="md"
         )
+    elif query.data == "rfrsh":
+        await query.answer("Fetching MongoDb DataBase")
+        buttons = [[
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
+            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='rfrsh')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        total = await Media.count_documents()
+        users = await db.total_users_count()
+        chats = await db.total_chat_count()
+        monsize = await db.get_db_size()
+        free = 536870912 - monsize
+        monsize = get_size(monsize)
+        free = get_size(free)
+        await query.message.edit_text(
+            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
@@ -983,7 +1001,6 @@ async def manual_filters(client, message, text=False):
                 break
     else:
         return False
-
 
 
 @Client.on_callback_query(filters.regex(r"^status"))
