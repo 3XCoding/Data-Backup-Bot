@@ -498,7 +498,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🔎 𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''),
             ],[
             InlineKeyboardButton("🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="https://t.me/BharatTorrentPro"),
-            InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07"),
             InlineKeyboardButton("📢 𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url="https://t.me/VijayAdithyaa")
             ],[
             InlineKeyboardButton("⚙️ 𝙼𝙴𝙽𝚄", callback_data="help"),
@@ -666,27 +665,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.TELE_TXT,
-            reply_markup=reply_markup,
-            parse_mode='html'
-        )
-    elif query.data == "stats":
-        await query.answer("Fetching MongoDb DataBase")
-        buttons = [[
-            InlineKeyboardButton('🌐 𝙳𝚈𝙽𝙾', callback_data='status')
-        ], [
-            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
-            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='rfrsh')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        total = await Media.count_documents()
-        users = await db.total_users_count()
-        chats = await db.total_chat_count()
-        monsize = await db.get_db_size()
-        free = 536870912 - monsize
-        monsize = get_size(monsize)
-        free = get_size(free)
-        await query.message.edit_text(
-            text=script.STATUS_TXT.format(total, users, chats, monsize, free),
             reply_markup=reply_markup,
             parse_mode='html'
         )
