@@ -86,7 +86,6 @@ START_TXT = environ.get("START_TXT", "<b>👋 𝙷𝙸 {mention}</b>\n\n𝙼𝚈
 BTN_LOCK_TEXT = environ.get("BTN_LOCK_TEXT", "𝙏𝙝𝙖𝙩'𝙨 𝙉𝙤𝙩 𝙁𝙤𝙧 𝙔𝙤𝙪. 𝙋𝙡𝙚𝙖𝙨𝙚 𝙍𝙚𝙦𝙪𝙚𝙨𝙩 𝙔𝙤𝙪𝙧 𝙊𝙬𝙣.")
 GOOD_BYE = environ.get("GOOD_BYE", "")
 FORCE_TEXT = environ.get("FORCE_TEXT", "𝑱𝒐𝒊𝒏 𝑶𝒖𝒓 𝑴𝒐𝒗𝒊𝒆 𝑼𝒑𝒅𝒂𝒕𝒆𝒔 𝑪𝒉𝒂𝒏𝒏𝒆𝒍 𝑻𝒐 𝑼𝒔𝒆 𝑻𝒉𝒊𝒔 𝑩𝒐𝒕!")
-MELCOW_ENG = environ.get("MELCOW_ENG", "<b>👋🏻Hey {u.mention} ;\n🥳Welcome To {message.chat.title}!</b>\n\n✧ ᴛʜɪꜱ ɪꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ᴘʀᴏᴠɪᴅᴇʀ ɢʀᴏᴜᴘ.\n✧ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ᴏꜰ ᴍᴏᴠɪᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ.\n✧ ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ.\n✧ ᴏᴜʀ ɴᴀᴛᴀꜱʜᴀ ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ᴍᴏᴠɪᴇ.\n\n<b>🎉Thank You For Joing {message.chat.title}\n\n🧑🏻‍💻𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa")
 
 # Others
 IMDB_DELET_TIME = int(environ.get('IMDB_DELET_TIME', "1000"))
