@@ -696,7 +696,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.BOT_STATUS,
+            text=script.STATUS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
