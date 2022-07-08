@@ -5,7 +5,6 @@ from info import ADMINS, LOG_CHANNEL, SUPPORT_CHAT, MELCOW_NEW_USERS, MELCOW_PIC
 from databasevs.users_chats_db import db
 from databasevs.ia_filterdb import Media
 from utils import get_size, temp, get_settings
-from Script import script, MELCOW_ENG
 from pyrogram.errors import ChatAdminRequired
 
 """-----------------------------------------https://t.me/GetTGLink/4179 --------------------------------------"""
