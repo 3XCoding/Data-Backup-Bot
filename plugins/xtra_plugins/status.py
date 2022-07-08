@@ -15,7 +15,7 @@ BOT_START_TIME = time.time()
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
-@Client.on_callback_query(filters.regex("^status$"))
+@Client.on_message(filters.command(["status"]))
 async def bot_status(client,message: CallbackQuery):
     if HEROKU_API_KEY:
         try:
