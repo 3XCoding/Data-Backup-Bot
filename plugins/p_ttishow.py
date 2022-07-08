@@ -51,6 +51,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
+                temp.MELCOW['welcome'] = await message.reply(f"<b>👋🏻Hey {u.mention} ;\n🥳Welcome To {message.chat.title}!</b>\n\n✧ ᴛʜɪꜱ ɪꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ᴘʀᴏᴠɪᴅᴇʀ ɢʀᴏᴜᴘ.\n✧ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ᴏꜰ ᴍᴏᴠɪᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ.\n✧ ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ.\n✧ ᴏᴜʀ ɴᴀᴛᴀꜱʜᴀ ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ᴍᴏᴠɪᴇ.\n\n<b>🎉Thank You For Joining {message.chat.title}\n\n🧑🏻‍💻𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa")
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(MELCOW_PIC),
                                                  caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
