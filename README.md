@@ -36,7 +36,7 @@
 ## Original Repo
 
 * [![Eva Maria](https://img.shields.io/static/v1?label=Evaa&message=Maria&color=geen)](https://github.com/EvamariaTG/EvaMaria)
-* [![PROFESSOR BOT](https://img.shields.io/static/v1?label=Evaa&message=Maria&color=geen)](https://github.com/MrMKN/PROFESSOR-BOT)
+* [![PROFESSOR BOT](https://img.shields.io/static/v1?label=PROFESSOR&message=BOT&color=geen)](https://github.com/MrMKN/PROFESSOR-BOT)
 
 ## Spacial Thanks To
 
