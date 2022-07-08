@@ -51,21 +51,19 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>👋🏻Hey {u.mention} ;\n🥳Welcome To {message.chat.title}!</b>\n\n✧ ᴛʜɪꜱ ɪꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ᴘʀᴏᴠɪᴅᴇʀ ɢʀᴏᴜᴘ.\n✧ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ᴏꜰ ᴍᴏᴠɪᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ.\n✧ ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ.\n✧ ᴏᴜʀ ɴᴀᴛᴀꜱʜᴀ ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ᴍᴏᴠɪᴇ.\n\n<b>🎉Thank You For Joing {message.chat.title}\n\n🧑🏻‍💻𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa")
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(MELCOW_PIC),
                                                  caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                           InlineKeyboardButton("𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
+                                                                           InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
                                                                            ],[
-                                                                           InlineKeyboardButton("𝙲𝙷𝙰𝙽𝙽𝙴𝙻", url="https://t.me/BharatTorrentPro")
+                                                                           InlineKeyboardButton("⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿", url="https://t.me/BharatTorrentPro")
 
                                                                          ]]
                                                  ),
                                                  parse_mode='html'
 )
-
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
