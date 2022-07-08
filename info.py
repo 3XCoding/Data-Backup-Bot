@@ -4,6 +4,7 @@ import asyncio
 import json
 from collections import defaultdict
 from typing import Dict, List, Union
+from p_ttishow import temp, MELCOW_PIC, MELCOW_ENG, MELCOW 
 from pyrogram import Client
 
 id_pattern = re.compile(r'^.\d+$')
