@@ -27,10 +27,8 @@ humanize
 PyPDF2
 pyshorteners
 ffmpeg-python
-TgCrypto
 py-tgcalls
 python-dotenv
-requests
 aiohttp
 asyncio
 ffmpeg
