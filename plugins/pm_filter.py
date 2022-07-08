@@ -690,6 +690,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "status":
+        buttons = [[
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='stats')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.BOT_STATUS,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data.startswith("setgs"):
         ident, set_type, status, grp_id = query.data.split("#")
         grpid = await active_connection(str(query.from_user.id))
