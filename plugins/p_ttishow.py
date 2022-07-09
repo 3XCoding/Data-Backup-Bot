@@ -55,14 +55,10 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                                  photo=(MELCOW_PIC),
                                                  caption=(MELCOW_ENG.format(u.mention, message.chat.title)),
-                                                 reply_markup=InlineKeyboardMarkup(
-                                                                         [
-                                                                           InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
-                                                                           ],[
-                                                                           InlineKeyboardButton("⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿", url="https://t.me/BharatTorrentPro")
-                                                                         ]
-                                                 reply_markup=InlineKeyboardMarkup(buttons)
-                                                 reply_markup=reply_markup,
+                                                 reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
+                                                                                      ],[
+                                                                                      InlineKeyboardButton("⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿", url="https://t.me/BharatTorrentPro")
+                                                                                   ]]
                                                  parse_mode='html'
         ),
 
