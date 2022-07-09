@@ -3,20 +3,20 @@
 import os
 import math
 import time
+from info import ADMINS
 import heroku3
 import requests
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from databasevs.users_chats_db import db
 
 #=====================================================
 BOT_START_TIME = time.time()
-
+CMD = ['.', '/']
 HEROKU_API_KEY = (os.environ.get("HEROKU_API_KEY", ""))
 #=====================================================
 
-@Client.on_callback_query(filters.regex("^status$"))
-async def bot_status(client,message: CallbackQuery):
+@Client.on_message(filters.private & filters.user(ADMINS) & filters.command("dyno", CMD))         
+async def bot_status_cmd(client,message):
     if HEROKU_API_KEY:
         try:
             server = heroku3.from_key(HEROKU_API_KEY)
@@ -54,14 +54,21 @@ async def bot_status(client,message: CallbackQuery):
                 usedperc = math.floor(quota_used / total_quota * 100)
                 leftperc = math.floor(quota_left / total_quota * 100)
 
+#---------text--------🔥
+
                 quota_details = f"""
-Heroku Account Status
-➪ 𝖸𝗈𝗎 𝗁𝖺𝗏𝖾 {total} 𝗁𝗈𝗎𝗋𝗌 𝗈𝖿 𝖿𝗋𝖾𝖾 𝖽𝗒𝗇𝗈 𝗊𝗎𝗈𝗍𝖺 𝖺𝗏𝖺𝗂𝗅𝖺𝖻𝗅𝖾 𝖾𝖺𝖼𝗁 𝗆𝗈𝗇𝗍𝗁.
-➪ 𝖣𝗒𝗇𝗈 𝗁𝗈𝗎𝗋𝗌 𝗎𝗌𝖾𝖽 𝗍𝗁𝗂𝗌 𝗆𝗈𝗇𝗍𝗁:
-        • {used} 𝖧𝗈𝗎𝗋𝗌 ( {usedperc}% )
-➪ 𝖣𝗒𝗇𝗈 𝗁𝗈𝗎𝗋𝗌 𝗋𝖾𝗆𝖺𝗂𝗇𝗂𝗇𝗀 𝗍𝗁𝗂𝗌 𝗆𝗈𝗇𝗍𝗁:
-        • {hours} 𝖧𝗈𝗎𝗋𝗌 ( {leftperc}% )
-        • Approximately {days} days!"""
+𝑩𝒐𝒕 𝑺𝒆𝒓𝒗𝒆𝒓:
+
+✧ 𝚃𝙾𝚃𝙰𝙻 𝙳𝚈𝙽𝙾 : {total}𝖧𝗈𝗎𝗋𝗌 𝙵𝗋𝖾𝖾 𝙳𝗒𝗇𝗈!
+ 
+✧ 𝙳𝚈𝙽𝙾 𝚄𝚂𝙴𝙳 : {used} 𝖧𝗈𝗎𝗋𝗌 ( {usedperc}% )
+        
+✧ 𝙳𝚈𝙽𝙾 𝚁𝙴𝙼𝙰𝙸𝙽𝙸𝙽𝙶 : {hours} 𝖧𝗈𝗎𝗋𝗌 ( {leftperc}% )
+        
+✧ 𝙰𝙿𝙿𝚁𝙾𝚇𝙸𝙼𝙰𝚃𝙴 𝙳𝙰𝚈𝚂 : {days} Days left!"""
+
+#----------end---------💯
+
             else:
                 quota_details = ""
         except:
@@ -78,19 +85,18 @@ Heroku Account Status
         used = humanbytes(u)
         free = humanbytes(f)
 
-        disk = "\n**Disk Details**\n\n" \
-            f"> USED  :  {used} / {total}\n" \
-            f"> FREE  :  {free}\n\n"
+        disk = "\n**𝑫𝒊𝒔𝒌 𝑫𝒆𝒕𝒂𝒊𝒍𝒔**\n\n" \
+            f"✧ USED  :  {used} / {total}\n" \
+            f"✧ FREE  :  {free}\n\n"
     except:
         disk = ""
-    buttons = [[InlineKeyboardButton("Back", callback_data="stats")]]
-    await message.message.edit_text(
-        "𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁\n\n"
-        "DB Status\n"
-        f"➪ 𝖡𝗈𝗍 𝖴𝗉𝗍𝗂𝗆𝖾: {uptime}\n"
+
+    await message.reply_text(
+        "<u> 𝗖𝘂𝗿𝗿𝗲𝗻𝘁 𝘀𝘁𝗮𝘁𝘂𝘀 𝗼𝗳 𝘆𝗼𝘂𝗿 𝗕𝗼𝘁</u>\n\n"
+        "𝑫𝒂𝒕𝒂𝑪𝒆𝒏𝒕𝒆𝒓 𝑺𝒕𝒂𝒕𝒖𝒔:\n"
+        f"✧ 𝙱𝙾𝚃 𝚄𝙿𝚃𝙸𝙼𝙴 : {uptime}\n"
         f"{quota_details}"
         f"{disk}",
-        parse_mode="md",
-        reply_markup=InlineKeyboardMarkup(buttons),
+        quote=True,
+        parse_mode="md"
     )
-
