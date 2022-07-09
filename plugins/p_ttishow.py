@@ -60,8 +60,8 @@ async def save_group(bot, message):
                                                      ],[
                                                      InlineKeyboardButton("⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿", url="https://t.me/BharatTorrentPro")
                                                  ]]
-                                                 reply_markup = InlineKeyboardMarkup(buttons)
-                                                 await query.message.edit_text(
+                                                 reply_markup=InlineKeyboardMarkup(buttons)
+                                                 await message.edit_text(
                                                  reply_markup=reply_markup,
                                                  parse_mode='html'
         )
