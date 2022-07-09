@@ -58,7 +58,7 @@ async def save_group(bot, message):
                                                        reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
                                                                                             ],[
                                                                                             InlineKeyboardButton("⭐️ 𝚃𝙾𝚁𝚁𝙴𝙽𝚃 𝙶𝚁𝙾𝚄𝙿", url="https://t.me/BharatTorrentPro")
-                                                                                         ]]
+                                                                                         ]])
                                                        reply_markup=InlineKeyboardMarkup(buttons)
                                                        reply_markup=reply_markup,
                                                        parse_mode='html,
