@@ -556,7 +556,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )  
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://upayi.ml/x3coding@upi")
+            InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://upayi.ml/BharatCoding@upi")
             ],[
             InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start"),
             InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="stats")
