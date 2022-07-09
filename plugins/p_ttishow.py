@@ -64,8 +64,7 @@ async def save_group(bot, message):
                                          await message.edit_text(
                                          text=f"<b>👋🏻Hey {u.mention} ;\n🥳Welcome To {message.chat.title}!</b>\n\n✧ ᴛʜɪꜱ ɪꜱ ᴍᴏᴠɪᴇꜱ ᴀɴᴅ ꜱᴇʀɪᴇꜱ ᴘʀᴏᴠɪᴅᴇʀ ɢʀᴏᴜᴘ.\n✧ ᴀʟʟ ᴄᴀᴛᴇɢᴏʀɪᴇꜱ ᴏꜰ ᴍᴏᴠɪᴇꜱ ᴀᴠᴀɪʟᴀʙʟᴇ ʜᴇʀᴇ.\n✧ ᴊᴜꜱᴛ ᴛʏᴘᴇ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ.\n✧ ᴏᴜʀ ɴᴀᴛᴀꜱʜᴀ ᴡɪʟʟ ꜱᴇɴᴅ ʏᴏᴜ ᴍᴏᴠɪᴇ.\n\n<b>🎉Thank You For Joining {message.chat.title}\n\n🧑🏻‍💻𝙳𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𝙱𝚈:</b> @VijayAdithyaa")
                                          reply_markup=reply_markup,
-                                         parse_mode='html'
-        )
+                                         parse_mode='html,
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
