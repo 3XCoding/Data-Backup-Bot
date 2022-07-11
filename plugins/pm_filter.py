@@ -559,7 +559,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://upayi.ml/BharatCoding@upi")
             ],[
             InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start"),
-            InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="stats")
+            InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="status")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -669,11 +669,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "stats":
+    elif query.data == "status":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
             InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='about'),
-            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='stats')
+            InlineKeyboardButton('⟲ 𝚁𝙴𝙵𝚁𝙴𝚂𝙷 ⟳', callback_data='status')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
