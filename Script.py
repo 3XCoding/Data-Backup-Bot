@@ -109,11 +109,11 @@ class script(object):
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """✘ 𝑫𝒂𝒕𝒂𝒃𝒂𝒔𝒆:
 
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
-<b>‹› 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 :</b> {}
-<b>‹› 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
-<b>‹› 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}"""
+<b>✧ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂 :</b> {}
+<b>✧ 𝚃𝙾𝚃𝙰𝙻 𝚄𝚂𝙴𝚁𝚂 :</b> {}
+<b>✧ 𝚃𝙾𝚃𝙰𝙻 𝙲𝙷𝙰𝚃𝚂 :</b> {}
+<b>✧ 𝚄𝚂𝙴𝙳 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}
+<b>✧ 𝙵𝚁𝙴𝙴 𝚂𝚃𝙾𝚁𝙰𝙶𝙴 :</b> {}"""
     FOND_TXT = """✘ 𝑭𝒐𝒏𝒕 𝑪𝒐𝒑𝒚 & 𝑷𝒍𝒆𝒂𝒔𝒆:
 
 <b>✧</b> 𝙵𝙾𝙽𝚃 𝙸𝚂 𝙰 𝙼𝙾𝙳𝚄𝙻𝙴 𝙵𝙾𝚁 𝙼𝙰𝙺𝙴 𝚈𝙾𝚄𝚁 𝚃𝙴𝚇𝚃 𝚂𝚃𝚈𝙻𝙸𝚂𝙷.
@@ -153,12 +153,12 @@ class script(object):
 
 • /audiobook: 𝖱𝖾𝗉𝗅𝗒 𝗍𝗁𝗂𝗌 𝖼𝗈𝗆𝗆𝖺𝗇𝖽 𝗍𝗈 𝖺𝗇𝗒 𝖯𝖣𝖥 𝗍𝗈 𝗀𝖾𝗇𝖾𝗋𝖺𝗍𝖾 𝗍𝗁𝖾 𝖺𝗎𝖽𝗂𝗈"""
     LOG_TEXT_G = """#NewGroup
-Group = {}(<code>{}</code>)
-Total Members = <code>{}</code>
-Added By - {}
+**𝙶𝚁𝙾𝚄𝙿 𝙽𝙰𝙼𝙴 :** {}(<code>{}</code>)
+**𝚃𝙾𝚃𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁𝚂 :** <code>{}</code>
+**𝙰𝙳𝙳𝙴𝙳 𝙱𝚈 :** {}
 """
     LOG_TEXT_P = """#NewBotUser
-ID - <code>{}</code>
-Name - {}
+**𝚄𝚂𝙴𝚁 𝙸𝙳 :** <code>{}</code>
+**𝚄𝚂𝙴𝚁 𝙽𝙰𝙼𝙴 :** {}
 """
 
