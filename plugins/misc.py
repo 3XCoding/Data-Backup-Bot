@@ -137,7 +137,7 @@ async def imdb_search(client, message):
         r, title = message.text.split(None, 1)
         movies = await get_poster(title, bulk=True)
         if not movies:
-            return await message.reply("No results Found")
+            return await message.reply("𝙽𝙾 𝚁𝙴𝚂𝚄𝙻𝚃𝚂 𝙵𝙾𝚄𝙽𝙳")
         btn = [
             [
                 InlineKeyboardButton(
@@ -147,11 +147,11 @@ async def imdb_search(client, message):
             ]
             for movie in movies
         ]
-        await k.edit('Here is what i found on IMDb', reply_markup=InlineKeyboardMarkup(btn))
+        await k.edit('𝙷𝙴𝚁𝙴 𝙸𝚂 𝚆𝙷𝙰𝚃 𝙸 𝙵𝙾𝚄𝙽𝙳 𝙾𝙽 𝙸𝙼𝙳𝙱', reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(IMDB_DELET_TIME)
         await k.delete()
     else:
-        await message.reply('Give me a movie / series Name')
+        await message.reply('𝙶𝙸𝚅𝙴 𝙼𝙴 𝙰 𝙼𝙾𝚅𝙸𝙴 / 𝚂𝙴𝚁𝙸𝙴𝚂 𝙽𝙰𝙼𝙴')
         await asyncio.sleep(3)
         await k.delete()
 
