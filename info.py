@@ -109,10 +109,10 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 IFLONG_FILE_NAME = environ.get("IFLONG_FILE_NAME", "File Name limit allowed by Telegram is {alimit} characters.\nThe given file name has {num} characters.\n<b>Essays Not allowed in Telegram file name!</b>\nPlease short your file name and try again!"""
 DOWNLOAD_START = environ.get("DOWNLOAD_START","<b><i>📥ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...</i></b>"
 SAVED_RECVD_DOC_FILE = environ.get("SAVED_RECVD_DOC_FILE","<b>Document Downloaded Successfully.</b>"
-RENAME_403_ERR = environ.get("RENAME_403_ERR", 
-UPLOAD_START = environ.get("UPLOAD_START", 
-AFTER_SUCCESSFUL_UPLOAD_MSG = environ.get("AFTER_SUCCESSFUL_UPLOAD_MSG", 
-REPLY_TO_DOC_FOR_RENAME_FILE = environ.get("REPLY_TO_DOC_FOR_RENAME_FILE", 
+RENAME_403_ERR = environ.get("RENAME_403_ERR","<b>Sorry. You Are Not Permitted To Rename This File.</b>"
+UPLOAD_START = environ.get("UPLOAD_START","<b><i>📤ᴜᴘʟᴏᴀᴅɪɴɢ...</i></b>"
+AFTER_SUCCESSFUL_UPLOAD_MSG = environ.get("AFTER_SUCCESSFUL_UPLOAD_MSG","<b><i>📥ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴏᴍᴘʟᴇᴛᴇ...</b></i>"
+REPLY_TO_DOC_FOR_RENAME_FILE = environ.get("REPLY_TO_DOC_FOR_RENAME_FILE","Downloaded in {} seconds. \nUploaded in {} seconds."
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
