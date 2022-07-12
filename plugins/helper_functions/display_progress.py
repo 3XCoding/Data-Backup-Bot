@@ -12,12 +12,6 @@ import math
 import os
 import time
 
-# the secret configuration specific things
-if bool(os.environ.get("WEBHOOK", False)):
-    from info import info
-else:
-    from info import info
-
 # the Strings used for this "thing"
 from Script import script
 
