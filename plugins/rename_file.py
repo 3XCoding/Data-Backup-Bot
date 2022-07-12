@@ -37,7 +37,7 @@ async def rename_doc(bot, update):
         cmd, file_name = update.text.split(" ", 1)
         if len(file_name) > 128:
             await update.reply_text(
-                Translation.IFLONG_FILE_NAME.format(
+                info.IFLONG_FILE_NAME.format(
                     alimit="128",
                     num=len(file_name)
                 )
@@ -57,7 +57,7 @@ async def rename_doc(bot, update):
         download_location = info.TMP_DOWNLOAD_DIRECTORY + "/"
         a = await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.DOWNLOAD_START,
+            text=info.DOWNLOAD_START,
             reply_to_message_id=update.message_id
         )
         c_time = time.time()
@@ -66,7 +66,7 @@ async def rename_doc(bot, update):
             file_name=download_location,
             progress=progress_for_pyrogram,
             progress_args=(
-                Translation.DOWNLOAD_START,
+                info.DOWNLOAD_START,
                 a,
                 c_time
             )
@@ -74,7 +74,7 @@ async def rename_doc(bot, update):
         if the_real_download_location is not None:
             try:
                 await bot.edit_message_text(
-                    text=Translation.SAVED_RECVD_DOC_FILE,
+                    text=info.SAVED_RECVD_DOC_FILE,
                     chat_id=update.chat.id,
                     message_id=a.message_id
                 )
@@ -82,7 +82,7 @@ async def rename_doc(bot, update):
                 pass
             if "IndianMovie" in the_real_download_location:
                 await bot.edit_message_text(
-                    text=Translation.RENAME_403_ERR,
+                    text=info.RENAME_403_ERR,
                     chat_id=update.chat.id,
                     message_id=a.message_id
                 )
@@ -95,7 +95,7 @@ async def rename_doc(bot, update):
             #     message_id=a.message_id
             # )
             logger.info(the_real_download_location)
-            thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
+            thumb_image_path = info.TMP_DOWNLOAD_DIRECTORY + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
                 logger.info('setting thumb.jpg as thumbnail')
                 thumb_image_path = "thumb.jpg"
@@ -127,7 +127,7 @@ async def rename_doc(bot, update):
                 reply_to_message_id=update.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
-                    Translation.UPLOAD_START,
+                    info.UPLOAD_START,
                     a, 
                     c_time
                 )
@@ -138,7 +138,7 @@ async def rename_doc(bot, update):
             except:
                 pass
             await bot.edit_message_text(
-                text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG,
+                text=info.AFTER_SUCCESSFUL_UPLOAD_MSG,
                 chat_id=update.chat.id,
                 message_id=a.message_id,
                 disable_web_page_preview=True
@@ -146,6 +146,6 @@ async def rename_doc(bot, update):
     else:
         await bot.send_message(
             chat_id=update.chat.id,
-            text=Translation.REPLY_TO_DOC_FOR_RENAME_FILE,
+            text=info.REPLY_TO_DOC_FOR_RENAME_FILE,
             reply_to_message_id=update.message_id
         )
