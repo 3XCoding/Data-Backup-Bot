@@ -8,11 +8,6 @@ logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# the secret configuration specific things
-    from sample_config import Config
-else:
-    from config import Config
-
 import os
 import time
 
