@@ -18,12 +18,12 @@ else:
     from info import info
 
 # the Strings used for this "thing"
-from translation import Translation
+from Script import script
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from helper_funcs.display_progress import progress_for_pyrogram
+from helper_functions.display_progress import progress_for_pyrogram
 
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
