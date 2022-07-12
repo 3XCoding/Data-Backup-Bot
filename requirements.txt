@@ -33,5 +33,6 @@ aiohttp
 asyncio
 ffmpeg
 ujson
+pyrogram==1.4.16
 speedtest
 Heroku3
