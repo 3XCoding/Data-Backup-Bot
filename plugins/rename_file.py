@@ -37,7 +37,7 @@ async def rename_doc(bot, update):
         cmd, file_name = update.text.split(" ", 1)
         if len(file_name) > 128:
             await update.reply_text(
-                info.IFLONG_FILE_NAME.format(
+                Translation.IFLONG_FILE_NAME.format(
                     alimit="128",
                     num=len(file_name)
                 )
@@ -66,7 +66,7 @@ async def rename_doc(bot, update):
             file_name=download_location,
             progress=progress_for_pyrogram,
             progress_args=(
-                info.DOWNLOAD_START,
+                Translation.DOWNLOAD_START,
                 a,
                 c_time
             )
@@ -74,7 +74,7 @@ async def rename_doc(bot, update):
         if the_real_download_location is not None:
             try:
                 await bot.edit_message_text(
-                    text=info.SAVED_RECVD_DOC_FILE,
+                    text=Translation.SAVED_RECVD_DOC_FILE,
                     chat_id=update.chat.id,
                     message_id=a.message_id
                 )
@@ -82,7 +82,7 @@ async def rename_doc(bot, update):
                 pass
             if "IndianMovie" in the_real_download_location:
                 await bot.edit_message_text(
-                    text=info.RENAME_403_ERR,
+                    text=Translation.RENAME_403_ERR,
                     chat_id=update.chat.id,
                     message_id=a.message_id
                 )
@@ -95,7 +95,7 @@ async def rename_doc(bot, update):
             #     message_id=a.message_id
             # )
             logger.info(the_real_download_location)
-            thumb_image_path = info.TMP_DOWNLOAD_DIRECTORY + "/" + str(update.from_user.id) + ".jpg"
+            thumb_image_path = Translation.TMP_DOWNLOAD_DIRECTORY + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
                 logger.info('setting thumb.jpg as thumbnail')
                 thumb_image_path = "thumb.jpg"
@@ -138,7 +138,7 @@ async def rename_doc(bot, update):
             except:
                 pass
             await bot.edit_message_text(
-                text=info.AFTER_SUCCESSFUL_UPLOAD_MSG,
+                text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG,
                 chat_id=update.chat.id,
                 message_id=a.message_id,
                 disable_web_page_preview=True
@@ -146,6 +146,6 @@ async def rename_doc(bot, update):
     else:
         await bot.send_message(
             chat_id=update.chat.id,
-            text=info.REPLY_TO_DOC_FOR_RENAME_FILE,
+            text=Translation.REPLY_TO_DOC_FOR_RENAME_FILE,
             reply_to_message_id=update.message_id
         )
