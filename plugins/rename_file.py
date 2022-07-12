@@ -54,7 +54,7 @@ async def rename_doc(bot, update):
             caption_str += "'>"
             caption_str += f"{Config.CHANNEL_URL}"
             caption_str += "</a>"
-        download_location = info.py.TMP_DOWNLOAD_DIRECTORY + "/"
+        download_location = info.TMP_DOWNLOAD_DIRECTORY + "/"
         a = await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.DOWNLOAD_START,
