@@ -12,10 +12,7 @@ import os
 import time
 
 # the secret configuration specific things
-if bool(os.environ.get("WEBHOOK", False)):
-    from evamaria import info
-else:
-    from evamaria import info
+if bool(os.environ.get("WEBHOOK", False))
 
 # the Strings used for this "thing"
 from translation import Translation
@@ -42,24 +39,7 @@ async def rename_doc(bot, update):
                     num=len(file_name)
                 )
             )
-            return
-        caption_str = ""
-        caption_str += "<b>"
-        caption_str += file_name
-        caption_str += "</b>"
-        if Config.CHANNEL_URL is not None:
-            caption_str += "\n\nJoin: "
-            caption_str += "<a href='"
-            caption_str += f"{Config.CHANNEL_URL}"
-            caption_str += "'>"
-            caption_str += f"{Config.CHANNEL_URL}"
-            caption_str += "</a>"
-        download_location = Info.TMP_DOWNLOAD_DIRECTORY + "/"
-        a = await bot.send_message(
-            chat_id=update.chat.id,
-            text=info.DOWNLOAD_START,
-            reply_to_message_id=update.message_id
-        )
+        
         c_time = time.time()
         the_real_download_location = await bot.download_media(
             message=update.reply_to_message,
