@@ -12,11 +12,6 @@ import math
 import os
 import time
 
-# the secret configuration specific things
-    from sample_config import Config
-else:
-    from config import Config
-
 # the Strings used for this "thing"
 from Script import script
 
