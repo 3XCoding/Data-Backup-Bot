@@ -14,12 +14,12 @@ import time
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
+    from info import info
 else:
-    from config import Config
+    from info import info
 
 # the Strings used for this "thing"
-from translation import Translation
+from Script import script
 
 
 async def progress_for_pyrogram(
