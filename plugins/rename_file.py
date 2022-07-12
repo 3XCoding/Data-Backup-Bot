@@ -13,9 +13,9 @@ import time
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from info import evamaria
+    from evamaria import info
 else:
-    from info import evamaria
+    from evamaria import info
 
 # the Strings used for this "thing"
 from translation import Translation
@@ -54,7 +54,7 @@ async def rename_doc(bot, update):
             caption_str += "'>"
             caption_str += f"{Config.CHANNEL_URL}"
             caption_str += "</a>"
-        download_location = evamaria.TMP_DOWNLOAD_DIRECTORY + "/"
+        download_location = Info.TMP_DOWNLOAD_DIRECTORY + "/"
         a = await bot.send_message(
             chat_id=update.chat.id,
             text=info.DOWNLOAD_START,
