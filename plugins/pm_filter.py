@@ -499,7 +499,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("🔎 𝚂𝙴𝙰𝚁𝙲𝙷", switch_inline_query_current_chat=''),
             ],[
             InlineKeyboardButton("🏛 𝚂𝚄𝙿𝙿𝙾𝚁𝚃", url="https://t.me/BharatTorrentPro"),
-            InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
+            InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚃𝙸𝙿𝚂", url="https://telegra.ph/Hey-Natasha-Bot-07-07")
             ],[
             InlineKeyboardButton("⚙️ 𝙼𝙴𝙽𝚄", callback_data="help"),
             InlineKeyboardButton("💡 𝙰𝙱𝙾𝚄𝚃", callback_data="about")
