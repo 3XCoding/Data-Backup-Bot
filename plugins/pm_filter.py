@@ -655,7 +655,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
-            text=script.RENAME_TXT,
+            text="<b>Out Of Service </b>"
+        )
+        await query.message.edit_text(
+            text="<b>Out Of Service . .</b>"
+        )
+        await query.message.edit_text(
+            text="<b>Out Of Service . . .</b>"
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
             reply_markup=reply_markup,
             parse_mode='html'
         )
