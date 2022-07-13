@@ -55,14 +55,9 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_photo(
                                  photo = (MELCOW_PIC),                
                                  parse_mode=enums.ParseMode.HTML,
-                                 reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton('🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂', url='https://telegra.ph/Hey-Natasha-Bot-07-07')
-                    ]
-                ]
-               )
-            )
+                                 reply_markup = InlineKeyboardMarkup( [[
+                                 InlineKeyboardButton("🧑🏻‍⚖️ 𝙱𝙾𝚃 𝚁𝚄𝙻𝙴𝚂",   url="https://telegra.ph/Hey-Natasha-Bot-07-07") ]]
+       )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
