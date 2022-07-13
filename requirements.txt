@@ -21,7 +21,7 @@ opencv-python-headless
 pypng
 Pillow
 wget
-aiofiles
+Aiofiles
 psutil
 wheel
 humanize
