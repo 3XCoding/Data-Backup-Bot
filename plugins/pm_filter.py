@@ -2,6 +2,7 @@ import asyncio
 import re
 import ast
 
+import math
 import os
 import math
 import time
@@ -678,6 +679,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "tips":
+        buttons = [[
+            InlineKeyboardButton('❮ 𝙱𝙰𝙲𝙺', callback_data='pages')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.TIPS_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "status":
         await query.answer("Fetching MongoDb DataBase")
         buttons = [[
@@ -978,5 +989,3 @@ async def manual_filters(client, message, text=False):
                 break
     else:
         return False
-
-
