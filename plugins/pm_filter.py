@@ -4,7 +4,6 @@ import ast
 
 import math
 import os
-import math
 import time
 import heroku3
 import requests
