@@ -17,6 +17,7 @@ from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GRO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
+from dyno import HEROKU_API_KEY
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from databasevs.users_chats_db import db
 from databasevs.ia_filterdb import Media, get_file_details, get_search_results
@@ -557,6 +558,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton("🪙 𝙳𝙾𝙽𝙰𝚃𝙸𝙾𝙽", url="https://upayi.ml/BharatCoding@upi")
+            InlineKeyboardButton("🏛 DYNO", callback_data="dyno")
             ],[
             InlineKeyboardButton("🏛 𝙷𝙾𝙼𝙴", callback_data="start"),
             InlineKeyboardButton("🖱 𝚂𝚃𝙰𝚃𝚄𝚂", callback_data="status")
